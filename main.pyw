@@ -41,7 +41,9 @@ class MyApp:
         self.workingfolder = newworkingfolder
 
     def startup(self):
-        with open('config.ini', 'r+') as file:
+        mode = 'r+' if os.path.exists('config.ini') else 'w+'
+        with open('config.ini', mode) as file:
+            file.seek(0)
             sessiondata = file.read()
 
             if 'defaultrdtdir=' not in sessiondata:
@@ -127,7 +129,7 @@ class MyApp:
 
     def updatemoddetails(self):
         self.update_config_workingdir()
-        self.fm.update_directory(self.workingfolder)
+        self.fm.update_directorys(self.defaultfolder, self.workingfolder)
         self.ui.updateModTitle(self.modname)
         self.ui.reset_rows()
 

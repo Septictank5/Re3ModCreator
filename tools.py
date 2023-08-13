@@ -202,7 +202,7 @@ class FileManager(QObject):
     def __init__(self):
         super().__init__()
 
-    def update_directorys(self, defaultdirectory, workingdirectory: str):
+    def update_directorys(self, defaultdirectory: str, workingdirectory: str):
         self.defaultdirectory = defaultdirectory
         self.workingdirectory = workingdirectory
         self.rooms = []
