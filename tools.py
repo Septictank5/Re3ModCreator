@@ -188,15 +188,25 @@ class Room:
                 break
 
     def resetitems(self):
+        rooms_to_update = []
         with open(self.defaultpath + self.filename, 'rb') as file:
             data = file.read()
             for item, index in self.items:
                 item.data = data[index:index + item.size]
                 item.update_vars(item.data)
+                flag = int.from_bytes(item.flag, 'little')
+                if flag in roomitemflags.keys():
+                    for collection in roomitemflags[flag]:
+                        if self.name not in collection:
+                            continue
+                        for room in collection:
+                            if room != self.name:
+                                rooms_to_update.append([room, item])
             self.writeitemstofile()
+        return rooms_to_update
 
 
-class FileManager(QObject):
+class RoomHandler(QObject):
     progressupdate = pyqtSignal(int)
 
     def __init__(self):
@@ -213,7 +223,11 @@ class FileManager(QObject):
 
     def restore_room_items(self, roomname: str):
         room = self.find_room(roomname)
-        room.resetitems()
+        rooms_to_update = room.resetitems()
+        for roomname, item in rooms_to_update:
+            room = self.find_room(roomname)
+            room.changeitemwithflag(item)
+
 
     def restore_all_items(self):
         for room in self.rooms:

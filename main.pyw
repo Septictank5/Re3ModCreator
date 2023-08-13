@@ -2,26 +2,54 @@ from uihandler import *
 import os
 import sys
 import shutil
+from itemmanager import ItemManager
 
 
 class MyApp:
     def __init__(self):
         self.ui = MyWindow()
-        self.doconnections()
+        self.rh = RoomHandler()
+        self.managerlist = [ItemManager(self.ui, self.rh)]
+        self.manager = self.managerlist[0]
+        self.localconnections()
         self.startup()
+        self.managerconnections()
 
-    def doconnections(self):
+    def localconnections(self):
         self.ui.connectOpenDir(self.choosedirectory)
         self.ui.connectCreateMod(self.create_mod)
         self.ui.connectOpenMod(self.open_mod)
-        self.ui.connectRestoreRoomItems(self.restoreroomitems)
-        self.ui.connectRestoreAllRoomItems(self.restoreallroomitems)
-        self.ui.connectRoomChange_Items(self.roomfocuschange_items)
-        self.ui.connectRoomChange_Doors(self.roomfocuschange_doors)
+        self.ui.connectRestoreRoomItems(self.restoreroom)
+        self.ui.connectRestoreAllRoomItems(self.restoreallrooms)
+        self.ui.connectRoomChange_Items(self.roomfocuschange)
         self.ui.connectItemChange(self.itemfocuschange)
-        self.ui.connectQuantityUpdate(self.updatequantity)
-        self.ui.connectSwap(self.swapitem)
+        self.ui.connectSwap(self.swap)
         self.ui.connectVerify(self.verify)
+        self.ui.connectTabChanged(self.changemanager)
+
+    def managerconnections(self):
+        self.ui.connectQuantityUpdate(self.managerlist[0].updatequantity)
+
+    def roomfocuschange(self, row):
+        self.manager.roomfocuschange()
+
+    def itemfocuschange(self):
+        self.manager.itemfocuschange()
+
+    def updatequantity(self):
+        self.manager.updatequantity()
+
+    def swap(self):
+        self.manager.swap()
+
+    def restoreroom(self):
+        self.manager.restoreroom()
+
+    def restoreallrooms(self):
+        self.manager.restoreallrooms()
+
+    def changemanager(self, value):
+        self.manager = self.managerlist[value]
 
     def choosedirectory(self):
         chosenfolder = QFileDialog.getExistingDirectory() + '/'
@@ -69,48 +97,9 @@ class MyApp:
                 file.write(f'workingdir={self.workingfolder}\n')
             self.modname = self.workingfolder.split('/')[-2]
             self.ui.updateModTitle(self.modname)
-            self.fm = FileManager()
-            self.fm.progressupdate.connect(self.ui.updateProgress)
-            self.fm.update_directorys(self.defaultfolder, self.workingfolder)
-            self.ui.initUI(self.fm.get_room_names(), self.fm.get_all_items())
-
-    def roomfocuschange_items(self, row):
-        self.room = self.ui.get_Room()
-        self.items = self.fm.get_room_items(self.room) or []
-        self.ui.updateRoomItems(self.items)
-        self.itemfocuschange()
-
-    def roomfocuschange_doors(self, row):
-        pass
-
-    def itemfocuschange(self):
-        if self.items:
-            self.ritemindex = self.ui.get_RoomItemIndex()
-            self.ui.updateItemDetails(self.items[self.ritemindex])
-
-    def updatequantity(self):
-        quantity = self.ui.get_Quantity()
-        self.fm.changeitemquantity(self.room, self.ritemindex, quantity)
-
-    def swapitem(self):
-        newitem = self.ui.get_Item()
-        quantity = self.ui.get_Quantity()
-        self.fm.swap(self.room, self.ritemindex, newitem, quantity)
-        self.refresh_room_items()
-
-    def restoreroomitems(self):
-        self.fm.restore_room_items(self.room)
-        self.refresh_room_items()
-
-    def restoreallroomitems(self):
-        self.fm.restore_all_items()
-        self.refresh_room_items()
-
-    def refresh_room_items(self):
-        self.items = self.fm.get_room_items(self.room)
-        self.ui.updateRoomItems(self.items)
-        self.ui.set_RoomItemRow(0)
-        self.itemfocuschange()
+            self.rh.progressupdate.connect(self.ui.updateProgress)
+            self.rh.update_directorys(self.defaultfolder, self.workingfolder)
+            self.ui.initUI(self.rh.get_room_names(), self.rh.get_all_items())
 
     def create_mod(self):
         if self.get_modname():
@@ -129,7 +118,7 @@ class MyApp:
 
     def updatemoddetails(self):
         self.update_config_workingdir()
-        self.fm.update_directorys(self.defaultfolder, self.workingfolder)
+        self.rh.update_directorys(self.defaultfolder, self.workingfolder)
         self.ui.updateModTitle(self.modname)
         self.ui.reset_rows()
 
@@ -178,7 +167,7 @@ class MyApp:
         collected = []
         unhandled = []
         for room in rooms:
-            items = [f.itemname for f in self.fm.get_room_items(room) or []]
+            items = [f.itemname for f in self.rh.get_room_items(room) or []]
             if items is None:
                 continue
             for item in items:

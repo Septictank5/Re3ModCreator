@@ -60,6 +60,7 @@ class MyWindow(QMainWindow):
 
     def connectRoomChange_Items(self, func):
         self.view.RoomList_Items.currentRowChanged.connect(func)
+        self.view.RoomList_Doors.currentRowChanged.connect(func)
 
     def connectRoomChange_Doors(self, func):
         self.view.RoomList_Doors.currentRowChanged.connect(func)
@@ -75,6 +76,9 @@ class MyWindow(QMainWindow):
 
     def connectRestoreAllRoomItems(self, func):
         self.view.RestoreAllRoomsItemsButton.pressed.connect(func)
+
+    def connectTabChanged(self, func):
+        self.view.tabWidget.currentChanged.connect(func)
 
     def updateModTitle(self, title: str):
         self.view.modlabel.setText(title + ' Mod')
