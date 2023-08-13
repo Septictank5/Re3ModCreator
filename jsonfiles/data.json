@@ -1,0 +1,901 @@
+{
+    "roomnames": {
+        "R100": "Warehouse Save Room",
+        "R101": "Warehouse",
+        "R102": "Warehouse Alley",
+        "R103": "Warehouse Street",
+        "R104": "Basement Alley",
+        "R105": "Bar Jack Alley",
+        "R106": "Bar Jack Street",
+        "R107": "Bar Jack",
+        "R108": "Barricade Alley",
+        "R109": "Hydrant Alley",
+        "R10A": "RPD Street",
+        "R10B": "Alleyway Outside Pharmacy",
+        "R10C": "Hydrant Save",
+        "R10D": "Scenario Start",
+        "R10E": "Back Alley",
+        "R10F": "Boutique",
+        "R110": "RPD Front",
+        "R111": "RPD Hall",
+        "R112": "RPD Big Office",
+        "R113": "RPD Evidence Room",
+        "R114": "RPD Stairs 1F",
+        "R115": "RPD Corridor",
+        "R116": "RPD Meeting Room",
+        "R117": "RPD Dark Room",
+        "R118": "RPD Stairs 2F",
+        "R119": "RPD STARS Corridor",
+        "R11A": "STARS Office",
+        "R11B": "Pharmacy Room 1",
+        "R11C": "Pharmacy Room 2",
+        "R11D": "Warehouse Alley 2",
+        "R11E": "Warehouse Street 2",
+        "R11F": "Basement Alley 2",
+        "R120": "Bar Jack Alley 2",
+        "R121": "Bar Jack Street 2",
+        "R122": "Barricade Alley 2",
+        "R123": "Hydrant Alley 2",
+        "R124": "RPD Street 2",
+        "R125": "RPD Front 2",
+        "R200": "Bus Street",
+        "R201": "Parking Lot",
+        "R202": "Parking Lot Back",
+        "R203": "Construction Site",
+        "R204": "Power Station Front",
+        "R205": "Restaurant Front",
+        "R206": "Shopping Alley",
+        "R207": "Press Street",
+        "R208": "Municipal Alley",
+        "R209": "Party Alley",
+        "R20A": "Grave Digger Alley",
+        "R20B": "Train Station",
+        "R20C": "Cable Car",
+        "R20D": "Stagla Gas",
+        "R20E": "Stagla Gas Outside",
+        "R20F": "Press Offices",
+        "R210": "Press Entrance",
+        "R211": "Restaurant",
+        "R212": "Restaurant Basement",
+        "R213": "Power Station Access",
+        "R214": "Power Station",
+        "R215": "Cable Car Moving",
+        "R216": "Shopping Save",
+        "R217": "Stagla Escape",
+        "R218": "Fire Hose Alley",
+        "R219": "Press Entrance 2",
+        "R21A": "Parasite Alley",
+        "R21B": "Parking Lot Save",
+        "R300": "ClockTower Chapel",
+        "R301": "ClockTower Piano Room",
+        "R302": "ClockTower Dining Room",
+        "R303": "ClockTower Outdoor",
+        "R304": "ClockTower Hall 1F",
+        "R305": "ClockTower Bedroom",
+        "R306": "ClockTower Chess Room",
+        "R307": "ClockTower Library",
+        "R308": "Chronos Corridor",
+        "R309": "Chronos Room",
+        "R30A": "ClockTower Hall 2F",
+        "R30B": "Tower Outdoor",
+        "R30C": "ClockTower",
+        "R30D": "ClockTower Nemesis Fight",
+        "R30E": "ClockTower Hall 1F 2",
+        "R30F": "ClockTower Piano&Dining",
+        "R310": "ClockTower Chapel 2",
+        "R311": "ClockTower Bedroom 2",
+        "R312": "ClockTower Chess Room 2",
+        "R313": "ClockTower Library 2",
+        "R314": "Chronos Corridor 2",
+        "R315": "Chronos Room 2",
+        "R316": "ClockTower Hall 1F 3",
+        "R317": "ClockTower Piano Room 2",
+        "R400": "Hospital Street",
+        "R401": "Office Save",
+        "R402": "Hospital Hall",
+        "R403": "Reception",
+        "R404": "Staff Room",
+        "R405": "4F Corridor",
+        "R406": "Room 402",
+        "R407": "Room 401",
+        "R408": "Data Room",
+        "R409": "B3 Corridor",
+        "R40A": "Laboratory",
+        "R40B": "Synthesis Room",
+        "R40C": "Park Entrance",
+        "R40D": "Fountain Room",
+        "R40E": "Lake Passageway",
+        "R40F": "Factory Approach",
+        "R410": "Fountain Tunnel",
+        "R411": "Graveyard",
+        "R412": "Graveyard Cabin",
+        "R413": "Graveyard Save",
+        "R414": "Graveyard Secret",
+        "R415": "Grave Digger Pit",
+        "R417": "Hospital Street 2",
+        "R500": "Factory 1F",
+        "R501": "Factory Save 1F",
+        "R502": "Boiler Room",
+        "R503": "Treatment Control",
+        "R504": "Factory B1",
+        "R505": "Factory B1 Save",
+        "R506": "Water Puzzle",
+        "R507": "Toxic Pool Room",
+        "R508": "Disposal Access",
+        "R509": "Disposal Chamber",
+        "R50A": "Communications Room",
+        "R50B": "Hatch Escape Path",
+        "R50C": "Car Cemetary",
+        "R50D": "Paracelsus Room",
+        "R50E": "Chopper Departure",
+        "R50F": "Escape Elevator",
+        "R510": "Factory Access"
+    },
+    "itemnames": [
+        "Empty",
+        "Knife",
+        "Sigpro HG",
+        "Beretta HG",
+        "Benelli SG",
+        "S&W magnum",
+        "GL(burst)",
+        "GL(flame)",
+        "GL(acid)",
+        "GL(freeze)",
+        "Rocket Launcher",
+        "Gatling Gun",
+        "Mine Thrower",
+        "Eagle HG",
+        "Assault Rifle(manual)",
+        "Assault Rifle(auto)",
+        "M37 SG",
+        "Sigpro HG(en)",
+        "Beretta HG(en)",
+        "Benelli SG(en)",
+        "Mine Thrower(en)",
+        "HG bullets",
+        "Magnum bullets",
+        "SG shells",
+        "GL rounds(burst)",
+        "GL rounds(flame)",
+        "GL rounds(acid)",
+        "GL rounds(freeze)",
+        "MineThrower rounds",
+        "Rifle Clip",
+        "enhanced HG bullets",
+        "enhanced SG shells",
+        "First Aid Spray",
+        "Green Herb",
+        "Blue Herb",
+        "Red Herb",
+        "Green/Green Herb",
+        "Green/Blue Herb",
+        "Green/Red Herb",
+        "Green/Green/Green Herb",
+        "Green/Green/Blue Herb",
+        "Green/Blue/Red Herb",
+        "FAS box",
+        "Square Crank",
+        "U.Red Medal",
+        "U.Blue Medal",
+        "U.Gold Medal",
+        "Jill's STARS Card",
+        "U.Oil",
+        "Battery",
+        "Fire Hook",
+        "Power Cable",
+        "Fuse",
+        "U.Broke Fire Hose",
+        "Additive",
+        "Brad's Card Case",
+        "Brad's STARS Card",
+        "Machine Oil",
+        "Mixed Oil",
+        "U.Steel Chain",
+        "Wrench",
+        "Iron Pipe",
+        "U.Cylinder",
+        "Fire Hose",
+        "Tape Recorder",
+        "Lighter Oil",
+        "Lighter Case",
+        "Lighter",
+        "Green Gem",
+        "Blue Gem",
+        "Amber ball",
+        "Obsidian Ball",
+        "Crystal Ball",
+        "U.remote (no battery)",
+        "U.remote",
+        "U.AA batteries",
+        "Gold Gear",
+        "Silver Gear",
+        "Chronos Gear",
+        "Bronze Book",
+        "Bronze Compass",
+        "Vaccine Medium",
+        "Vaccine Base",
+        "U.Sig HG",
+        "U.Sig HG",
+        "Vaccine",
+        "U.Sig HG",
+        "U.Sig HG",
+        "Medium Base",
+        "Eagle Parts A",
+        "Eagle Parts B",
+        "M37 Parts A",
+        "M37 Parts B",
+        "U.Sig HG",
+        "Chronos Chain",
+        "Rusted Crank",
+        "Card Key",
+        "GunPowder A",
+        "GunPowder B",
+        "GunPowder C",
+        "GunPowder AA",
+        "GunPowder BB",
+        "GunPowder AC",
+        "GunPowder BC",
+        "GunPowder CC",
+        "GunPowder AAA",
+        "GunPowder AAB",
+        "GunPowder BBA",
+        "GunPowder BBB",
+        "GunPowder CCC",
+        "Infinite Ammo",
+        "Water Sample",
+        "System Disk",
+        "Dummy Key",
+        "Lockpick",
+        "Warehouse Key (BackDoor)",
+        "Sickroom Key",
+        "Emblem Key",
+        "U.Keyring",
+        "Clock Tower Key(Bezel)",
+        "Clock Tower Key(Winder)",
+        "Chronos Key",
+        "U.Sig HG",
+        "Park Key(front)",
+        "Park Key(Graveyard)",
+        "Park Key(Rear)",
+        "Facility Key(no barcode)",
+        "Facility Key(barcode)",
+        "Boutique Key",
+        "Ink Ribbon",
+        "Reload Tool",
+        "Game Instruction A",
+        "Game Instruction B",
+        "Game Instruction A"
+    ],
+    "set_ck_flags": [
+        "SYSTEM",
+        "STATUS",
+        "STOP",
+        "SCENARIO",
+        "COMMON",
+        "ROOM",
+        "ENEMY1",
+        "ENEMY2",
+        "ITEM2",
+        "MAP",
+        "USE",
+        "MESSAGE",
+        "ROOM_ENEMY",
+        "PBF00",
+        "PBF01",
+        "PBF02",
+        "PBF03",
+        "PBF04",
+        "PBF05",
+        "PBF06",
+        "PBF07",
+        "PBF08",
+        "PBF09",
+        "PBF0A",
+        "PBF0B",
+        "PBF0C",
+        "PBF0D",
+        "PBF0E",
+        "PBF0F",
+        "ZAPPING",
+        "RBJ_SET",
+        "KEY",
+        "MAP_C",
+        "MAP_I",
+        "ITEM2"
+    ],
+    "sce": [
+        "NONE",
+        "DOOR",
+        "ITEM",
+        "NORMAL",
+        "MESSAGE",
+        "EVENT",
+        "FLAG_CHG",
+        "WATER",
+        "MOVE",
+        "SAVE",
+        "ITEMBOX",
+        "DAMAGE",
+        "STATUS",
+        "DRAWER",
+        "WINDOWS"
+    ],
+    "sceproto": [
+        "NONE",
+        "MESSAGE",
+        "DOOR",
+        "EVENT",
+        "FLAG_CHG",
+        "NORMAL",
+        "STATUS",
+        "ENEMYPOS",
+        "WATER",
+        "ITEM",
+        "DAMAGE",
+        "MOVE",
+        "STAIRS_X",
+        "STAIRS_Z"
+    ],
+    "work": {
+        "0": "NONE",
+        "1": "PLAYER",
+        "2": "SPLAYER",
+        "3": "ENEMY",
+        "4": "OBJECT",
+        "5": "DOOR",
+        "6": "ALL",
+        "128": "PL_PARTS",
+        "160": "SPL_PARTS",
+        "192": "EM_PARTS",
+        "224": "OM_PARTS"
+    },
+    "spdset": [
+        "XPOS",
+        "YPOS",
+        "ZPOS",
+        "XDIR",
+        "YDIR",
+        "ZDIR",
+        "XPOS2",
+        "YPOS2",
+        "ZPOS2",
+        "XDIR2",
+        "YDIR2",
+        "ZDIR2"
+    ],
+    "memb_func": [
+        "POINTER",
+        "BEFLAG",
+        "ROUTINE0",
+        "ROUTINE1",
+        "ROUTINE2",
+        "ROUTINE3",
+        "ID",
+        "TYPE",
+        "OBJ_NO",
+        "SCE_NO",
+        "ATTR",
+        "XPOS",
+        "YPOS",
+        "ZPOS",
+        "XDIR",
+        "YDIR",
+        "ZDIR",
+        "NFLOOR",
+        "STATUSFLAG",
+        "GORUND",
+        "XDEST",
+        "ZDEST",
+        "SCEFLAG",
+        "SCEFREE0",
+        "SCEFREE1",
+        "SCEFREE2",
+        "SCEFREE3",
+        "XSPD0",
+        "XSPD1",
+        "YSPD",
+        "ZSPD",
+        "HOKAN_FLAG",
+        "OBJ_OFS_X",
+        "OBJ_OFS_Y",
+        "OBJ_OFS_Z",
+        "WIDTH",
+        "HEIGHT",
+        "DEPTH",
+        "PARTS_YPOS",
+        "SCA_XOLD",
+        "SCA_ZOLD",
+        "FREE0",
+        "FREE1",
+        "DAMAGE_CNT"
+    ],
+    "cmp": [
+        "EQ",
+        "GT",
+        "GTE",
+        "LT",
+        "LTE",
+        "NEQ",
+        "AND"
+    ],
+    "plcneck": [
+        "FRONT",
+        "COORD",
+        "ANGLE",
+        "YES",
+        "NO",
+        "TRACE",
+        "AUTO",
+        "FREE",
+        "INIT"
+    ],
+    "plcaction": [
+        "NONE",
+        "DEATH",
+        "WALK_FORWARD",
+        "RUN",
+        "STANDING",
+        "WALK_BACKWARD",
+        "CAREFUL_BACKWARD"
+    ],
+    "itemaction": {
+        "0": "NORMAL",
+        "1": "KNEEL"
+    },
+    "calcop": [
+        "ADD",
+        "SUB",
+        "MUL",
+        "DIV",
+        "MOD",
+        "OR",
+        "AND",
+        "XOR",
+        "NOT",
+        "LSL",
+        "LSR",
+        "ASR"
+    ],
+    "bgmid": [
+        "MAIN",
+        "SUB0",
+        "SUB1"
+    ],
+    "bgmop": [
+        "NOP",
+        "START",
+        "STOP",
+        "RESTART",
+        "PAUSE",
+        "FADEOUT"
+    ],
+    "bgmtype": [
+        "MAIN_VOL",
+        "PROG0_VOL",
+        "PROG1_VOL",
+        "PROG2_VOL"
+    ],
+    "sevab": [
+        "CORE",
+        "ARMS",
+        "ROOM",
+        "ENEMY",
+        "DOOR"
+    ],
+    "dooranim": {
+        "0": "NORMAL",
+        "1": "REVERSE",
+        "2": "NORMAL2",
+        "3": "REVERSE2",
+        "4": "UP",
+        "5": "DOWN",
+        "6": "NONE",
+        "128": "NOBU2"
+    },
+    "satflags": {
+        "1": "PLAYER",
+        "2": "ENEMY",
+        "4": "SAT04",
+        "8": "SAT08",
+        "16": "MANUAL",
+        "32": "FRONT",
+        "64": "UNDER",
+        "128": "SAT80"
+    },
+    "keydata": {
+        "Warehouse Key (BackDoor)": {
+            "unlocks": [
+                "Warehouse Alley",
+                "Warehouse Street",
+                "Basement Alley",
+                "Bar Jack",
+                "Bar Jack Alley",
+                "Bar Jack Street",
+                "Barricade Alley"
+            ],
+            "access": "Warehouse"
+        },
+        "Lighter": {
+            "unlocks": [
+                "Hydrant Alley",
+                "RPD Street",
+                "RPD Front",
+                "RPD Hall",
+                "RPD Big Office",
+                "RPD Evidence Room",
+                "RPD Stairs 1F",
+                "RPD Corridor",
+                "RPD Meeting Room",
+                "RPD Dark Room",
+                "RPD Stairs 2F",
+                "RPD STARS Corridor",
+                "Hydrant Save"
+            ],
+            "access": "Barricade Alley"
+        },
+        "Emblem Key": {
+            "unlocks": [
+                "STARS Office"
+            ],
+            "access": "RPD STARS Corridor"
+        },
+        "Lockpick": {
+            "unlocks": [
+                "Parasite Alley",
+                "Bus Street",
+                "Parking Lot",
+                "Parking Lot Back",
+                "Construction Site",
+                "Restaurant Front",
+                "Shopping Alley",
+                "Press Street",
+                "Press Offices",
+                "Press Entrance",
+                "Restaurant",
+                "Power Station Access",
+                "Shopping Save",
+                "Parking Lot Save",
+                "Fire Hose Alley",
+                "Warehouse Alley 2",
+                "Warehouse Street 2",
+                "Basement Alley 2",
+                "Bar Jack Alley 2",
+                "Bar Jack Street 2",
+                "Barricade Alley 2",
+                "Hydrant Alley 2",
+                "RPD Street 2",
+                "RPD Front 2"
+            ],
+            "access": "RPD Street"
+        },
+        "Fire Hook": {
+            "unlocks": [
+                "Restaurant Basement"
+            ],
+            "access": "Restaurant"
+        },
+        "Gems": {
+            "unlocks": [
+                "Municipal Alley",
+                "Party Alley",
+                "Grave Digger Alley",
+                "Train Station",
+                "Cable Car"
+            ],
+            "access": "Press Street"
+        },
+        "Fire Hose": {
+            "unlocks": [
+                "Pharmacy Room 1",
+                "Pharmacy Room 2",
+                "Back Alley",
+                "Alleyway Outside Pharmacy"
+            ],
+            "access": "Hydrant Alley"
+        },
+        "Wrank": {
+            "unlocks": [
+                "Stagla Gas",
+                "Stagla Gas Outside",
+                "Stagla Escape"
+            ],
+            "access": "Municipal Alley"
+        },
+        "Battery": {
+            "unlocks": [
+                "Power Station Front",
+                "Power Station"
+            ],
+            "access": "Power Station Access"
+        },
+        "CCParts": {
+            "unlocks": [
+                "ClockTower Piano Room",
+                "ClockTower Dining Room",
+                "ClockTower Outdoor",
+                "ClockTower Hall 1F",
+                "ClockTower Bedroom",
+                "ClockTower Chess Room",
+                "ClockTower Library",
+                "ClockTower Hall 2F",
+                "Tower Outdoor",
+                "ClockTower Chapel"
+            ],
+            "access": "Cable Car"
+        },
+        "Clock Tower Key(Bezel)": {
+            "unlocks": [
+                "ClockTower"
+            ],
+            "access": "ClockTower Outdoor"
+        },
+        "Chronos Key": {
+            "unlocks": [
+                "Chronos Room",
+                "Chronos Corridor"
+            ],
+            "access": "ClockTower Library"
+        },
+        "Chronos": {
+            "unlocks": [
+                "Hospital Street",
+                "Hospital Hall",
+                "Reception",
+                "Staff Room"
+            ],
+            "access": "ClockTower Chapel"
+        },
+        "Tape Recorder": {
+            "unlocks": [
+                "4F Corridor",
+                "Room 401",
+                "Data Room",
+                "B3 Corridor",
+                "Laboratory",
+                "Synthesis Room"
+            ],
+            "access": "Staff Room"
+        },
+        "Sickroom Key": {
+            "unlocks": [
+                "Room 402"
+            ],
+            "access": "4F Corridor"
+        },
+        "Vaccine": {
+            "unlocks": [
+                "Office Save",
+                "Hospital Street 2"
+            ],
+            "access": "Synthesis Room"
+        },
+        "Park Key(front)": {
+            "unlocks": [
+                "Park Entrance",
+                "Fountain Room",
+                "Lake Passageway",
+                "Fountain Tunnel",
+                "Factory Approach",
+                "Graveyard"
+            ],
+            "access": "Hospital Street 2"
+        },
+        "Park Key(Graveyard)": {
+            "unlocks": [
+                "Graveyard Cabin",
+                "Graveyard Save"
+            ],
+            "access": "Graveyard"
+        },
+        "Iron Pipe": {
+            "unlocks": [
+                "Graveyard Secret"
+            ],
+            "access": "Graveyard Cabin"
+        },
+        "Park Key(Rear)": {
+            "unlocks": [
+                "Factory 1F",
+                "Factory Save 1F",
+                "Boiler Room",
+                "Factory Access"
+            ],
+            "access": "Factory Approach"
+        },
+        "Facility Key(no barcode)": {
+            "unlocks": [
+                "Treatment Control",
+                "Factory B1",
+                "Factory B1 Save",
+                "Water Puzzle",
+                "Toxic Pool Room"
+            ],
+            "access": "Factory 1F"
+        },
+        "Water Sample": {
+            "unlocks": [
+                "Disposal Access"
+            ],
+            "access": "Treatment Control"
+        },
+        "System Disk": {
+            "unlocks": [
+                "Disposal Chamber"
+            ],
+            "access": "Disposal Access"
+        },
+        "Card Key": {
+            "unlocks": [
+                "Communications Room",
+                "Hatch Escape Path",
+                "Car Cemetary",
+                "Paracelsus Room",
+                "Chopper Departure",
+                "Escape Elevator"
+            ],
+            "access": "Factory 1F"
+        }
+    },
+    "musthaves": [
+        "Warehouse Key (BackDoor)",
+        "Lighter",
+        "Lockpick",
+        "Green Gem",
+        "Blue Gem",
+        "Machine Oil",
+        "Additive",
+        "Fuse",
+        "Power Cable",
+        "Clock Tower Key(Winder)",
+        "Clock Tower Key(Bezel)",
+        "Chronos Gear",
+        "Chronos Key",
+        "Tape Recorder",
+        "Sickroom Key",
+        "Medium Base",
+        "Vaccine",
+        "Park Key(front)",
+        "Park Key(Rear)",
+        "Card Key"
+    ],
+    "optionals": [
+        [
+            "Square Crank",
+            "Shutter Items Inaccessible"
+        ],
+        [
+            "Fire Hose",
+            "Pharmacy Inaccessible"
+        ],
+        [
+            "Fire Hook",
+            "Restaurant Basement Inaccessible"
+        ],
+        [
+            "Rusted Crank",
+            "Stagla Gas Inside Inaccessible"
+        ],
+        [
+            "Emblem Key",
+            "STARS Room Inaccessible"
+        ],
+        [
+            "Battery",
+            "Power Station Inaccessible"
+        ],
+        [
+            "Iron Pipe",
+            "Graveyard Secret Inaccessible"
+        ],
+        [
+            "Bronze Book",
+            "OG Bronze Compass Cannot Be Grabbed"
+        ],
+        [
+            "Facility Key(barcode)",
+            "OG Rocket Launcher Cannot Be Grabbed"
+        ],
+        [
+            "Water Sample",
+            "Disposal Access And Chamber Inaccessible"
+        ],
+        [
+            "System Disk",
+            "Disposal Chamber Inaccessible"
+        ],
+        [
+            "Bronze Compass",
+            "OG Battery Inaccessible"
+        ],
+        [
+            "Facility Key(no barcode)",
+            "Treatment Control, Factory B1, Factory B1 Save, Water Puzzle, Toxic Pool Room Inaccessible"
+        ],
+        [
+            "Wrench",
+            "OG Fire Hose Cannot Be Grabbed And Stagla Gas Inside Inaccessible"
+        ]
+    ],
+    "keyitems": [
+        "Warehouse Key (BackDoor)",
+        "Lighter",
+        "Emblem Key",
+        "Lockpick",
+        "Green Gem",
+        "Blue Gem",
+        "Fire Hose",
+        "Wrench",
+        "Rusted Crank",
+        "Square Crank",
+        "Battery",
+        "Fuse",
+        "Power Cable",
+        "Additive",
+        "Machine Oil",
+        "Fire Hook",
+        "Clock Tower Key(Bezel)",
+        "Clock Tower Key(Winder)",
+        "Tape Recorder",
+        "Medium Base",
+        "Vaccine Base",
+        "Vaccine",
+        "Sickroom Key",
+        "Silver Gear",
+        "Gold Gear",
+        "Bronze Book",
+        "Chronos Gear",
+        "Chronos Chain",
+        "Chronos Key",
+        "Park Key(front)",
+        "Park Key(Graveyard)",
+        "Park Key(Rear)",
+        "Facility Key(no barcode)",
+        "Facility Key(barcode)",
+        "Bronze Compass",
+        "Card Key",
+        "Lighter Oil",
+        "Lighter Case",
+        "Iron Pipe",
+        "Mixed Oil",
+        "Water Sample",
+        "System Disk",
+        "Vaccine Medium"
+    ],
+    "combokeys": {
+        "CCParts": [
+            "Additive",
+            "Fuse",
+            "Machine Oil",
+            "Power Cable"
+        ],
+        "Gems": [
+            "Green Gem",
+            "Blue Gem"
+        ],
+        "Wrank": [
+            "Wrench",
+            "Rusted Crank"
+        ],
+        "Vaccine": [
+            "Vaccine Medium",
+            "Vaccine Base"
+        ],
+        "Chronos Gear": [
+            "Silver Gear",
+            "Gold Gear"
+        ],
+        "Chronos Key": [
+            "Clock Tower Key(Winder)",
+            "Chronos Chain"
+        ],
+        "Lighter": [
+            "Lighter Oil",
+            "Lighter Case"
+        ],
+        "Chronos": [
+            "Chronos Gear",
+            "Chronos Key"
+        ]
+    }
+}

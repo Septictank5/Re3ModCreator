@@ -1,0 +1,234 @@
+{
+    "Warehouse Key (BackDoor)": {
+        "unlocks": [
+            "Warehouse Alley",
+            "Warehouse Street",
+            "Basement Alley",
+            "Bar Jack",
+            "Bar Jack Alley",
+            "Bar Jack Street",
+            "Barricade Alley"
+        ],
+        "access": "Warehouse"
+    },
+    "Lighter": {
+        "unlocks": [
+            "Hydrant Alley",
+            "RPD Street",
+            "RPD Front",
+            "RPD Hall",
+            "RPD Big Office",
+            "RPD Evidence Room",
+            "RPD Stairs 1F",
+            "RPD Corridor",
+            "RPD Meeting Room",
+            "RPD Dark Room",
+            "RPD Stairs 2F",
+            "RPD STARS Corridor",
+            "Hydrant Save"
+        ],
+        "access": "Barricade Alley"
+    },
+    "Emblem Key": {
+        "unlocks": [
+            "STARS Office"
+        ],
+        "access": "RPD STARS Corridor"
+    },
+    "Lockpick": {
+        "unlocks": [
+            "Parasite Alley",
+            "Bus Street",
+            "Parking Lot",
+            "Parking Lot Back",
+            "Construction Site",
+            "Restaurant Front",
+            "Shopping Alley",
+            "Press Street",
+            "Press Offices",
+            "Press Entrance",
+            "Restaurant",
+            "Power Station Access",
+            "Shopping Save",
+            "Parking Lot Save",
+            "Fire Hose Alley",
+            "Warehouse Alley 2",
+            "Warehouse Street 2",
+            "Basement Alley 2",
+            "Bar Jack Alley 2",
+            "Bar Jack Street 2",
+            "Barricade Alley 2",
+            "Hydrant Alley 2",
+            "RPD Street 2",
+            "RPD Front 2"
+        ],
+        "access": "RPD Street"
+    },
+    "Fire Hook": {
+        "unlocks": [
+            "Restaurant Basement"
+        ],
+        "access": "Restaurant"
+    },
+    "Gems": {
+        "unlocks": [
+            "Municipal Alley",
+            "Party Alley",
+            "Grave Digger Alley",
+            "Train Station",
+            "Cable Car"
+        ],
+        "access": "Press Street"
+    },
+    "Fire Hose": {
+        "unlocks": [
+            "Pharmacy Room 1",
+            "Pharmacy Room 2",
+            "Back Alley",
+            "Alleyway Outside Pharmacy"
+        ],
+        "access": "Hydrant Alley"
+    },
+    "Wrank": {
+        "unlocks": [
+            "Stagla Gas",
+            "Stagla Gas Outside",
+            "Stagla Escape"
+        ],
+        "access": "Municipal Alley"
+    },
+    "Battery": {
+        "unlocks": [
+            "Power Station Front",
+            "Power Station"
+        ],
+        "access": "Power Station Access"
+    },
+    "CCParts": {
+        "unlocks": [
+            "ClockTower Piano Room",
+            "ClockTower Dining Room",
+            "ClockTower Outdoor",
+            "ClockTower Hall 1F",
+            "ClockTower Bedroom",
+            "ClockTower Chess Room",
+            "ClockTower Library",
+            "ClockTower Hall 2F",
+            "Tower Outdoor",
+            "ClockTower Chapel"
+        ],
+        "access": "Cable Car"
+    },
+    "Clock Tower Key(Bezel)": {
+        "unlocks": [
+            "ClockTower"
+        ],
+        "access": "ClockTower Outdoor"
+    },
+    "Chronos Key": {
+        "unlocks": [
+            "Chronos Room",
+            "Chronos Corridor"
+        ],
+        "access": "ClockTower Library"
+    },
+    "Chronos": {
+        "unlocks": [
+            "Hospital Street",
+            "Hospital Hall",
+            "Reception",
+            "Staff Room"
+        ],
+        "access": "ClockTower Chapel"
+    },
+    "Tape Recorder": {
+        "unlocks": [
+            "4F Corridor",
+            "Room 401",
+            "Data Room",
+            "B3 Corridor",
+            "Laboratory",
+            "Synthesis Room"
+        ],
+        "access": "Staff Room"
+    },
+    "Sickroom Key": {
+        "unlocks": [
+            "Room 402"
+        ],
+        "access": "4F Corridor"
+    },
+    "Vaccine": {
+        "unlocks": [
+            "Office Save",
+            "Hospital Street 2"
+        ],
+        "access": "Synthesis Room"
+    },
+    "Park Key(front)": {
+        "unlocks": [
+            "Park Entrance",
+            "Fountain Room",
+            "Lake Passageway",
+            "Fountain Tunnel",
+            "Factory Approach",
+            "Graveyard"
+        ],
+        "access": "Hospital Street 2"
+    },
+    "Park Key(Graveyard)": {
+        "unlocks": [
+            "Graveyard Cabin",
+            "Graveyard Save"
+        ],
+        "access": "Graveyard"
+    },
+    "Iron Pipe": {
+        "unlocks": [
+            "Graveyard Secret"
+        ],
+        "access": "Graveyard Cabin"
+    },
+    "Park Key(Rear)": {
+        "unlocks": [
+            "Factory 1F",
+            "Factory Save 1F",
+            "Boiler Room",
+            "Factory Access"
+        ],
+        "access": "Factory Approach"
+    },
+    "Facility Key(no barcode)": {
+        "unlocks": [
+            "Treatment Control",
+            "Factory B1",
+            "Factory B1 Save",
+            "Water Puzzle",
+            "Toxic Pool Room"
+        ],
+        "access": "Factory 1F"
+    },
+    "Water Sample": {
+        "unlocks": [
+            "Disposal Access"
+        ],
+        "access": "Treatment Control"
+    },
+    "System Disk": {
+        "unlocks": [
+            "Disposal Chamber"
+        ],
+        "access": "Disposal Access"
+    },
+    "Card Key": {
+        "unlocks": [
+            "Communications Room",
+            "Hatch Escape Path",
+            "Car Cemetary",
+            "Paracelsus Room",
+            "Chopper Departure",
+            "Escape Elevator"
+        ],
+        "access": "Factory 1F"
+    }
+}

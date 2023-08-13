@@ -1,0 +1,34 @@
+{
+    "CCParts": [
+        "Additive",
+        "Fuse",
+        "Machine Oil",
+        "Power Cable"
+    ],
+    "Gems": [
+        "Green Gem",
+        "Blue Gem"
+    ],
+    "Wrank": [
+        "Wrench",
+        "Rusted Crank"
+    ],
+    "Vaccine": [
+        "Vaccine Base"
+    ],
+    "Chronos Gear": [
+        "Silver Gear"
+    ],
+    "Chronos Key": [
+        "Clock Tower Key(Winder)",
+        "Chronos Chain"
+    ],
+    "Lighter": [
+        "Lighter Oil",
+        "Lighter Case"
+    ],
+    "Chronos": [
+        "Chronos Gear",
+        "Chronos Key"
+    ]
+}
