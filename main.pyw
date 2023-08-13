@@ -176,7 +176,7 @@ class MyApp:
         collected = []
         unhandled = []
         for room in rooms:
-            items = [f.typename for f in self.fm.get_room_items(room) or []]
+            items = [f.itemname for f in self.fm.get_room_items(room) or []]
             if items is None:
                 continue
             for item in items:
