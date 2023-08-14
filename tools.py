@@ -90,7 +90,7 @@ class Room:
         self.filename = filename
         self.defaultpath = defaultpath
         self.set_scddata()
-        self.readinitems()
+        self.readindata()
 
     def set_scddata(self):
         with open(self.workingpath + self.filename, 'rb') as file:
@@ -104,26 +104,60 @@ class Room:
 
         self.relevantdata = self.data[self.scdstartoff:self.scdendoff]
 
-    def readinitems(self):
+    def readindata(self):
         self.items = []
+        self.doors = []
+        self.enemies = []
         for index, value in enumerate(self.relevantdata):
-            if value == 0x67 and self.relevantdata[index + 2] == 0x2 and (self.relevantdata[index + 3] == 0x31 or
-                                                                          self.relevantdata[index + 3] == 0x21):
-                data = self.relevantdata[index:index + 22]
-                item = ItemAOTSet()
-            elif value == 0x68 and len(self.relevantdata[index:]) >= 30 and self.relevantdata[index + 2] == 0x2 \
-                    and self.relevantdata[index + 3] == 0x31:
-                data = self.relevantdata[index:index + 30]
-                item = ItemAOTSet4P()
-            else:
-                continue
+            match value:
+                case 0x67:
+                    item = ItemAOTSet()
+                    self.addtoitems(index, item)
+                case 0x68:
+                    item = ItemAOTSet4P()
+                    self.addtoitems(index, item)
+                case 0x7D:
+                    self.addtoenemies(index, value)
+                case 0x61:
+                    door = DoorAOTSet()
+                    self.addtodoors(index, door)
+                case 0x62:
+                    door = DoorAOTSet4P()
+                    self.addtodoors(index, door)
 
-            item.update_vars(data)
+    def addtoitems(self, index, item):
+        if len(self.relevantdata[index:]) < item.size:
+            return
+        tsce = self.relevantdata[index + 2]
+        sat = self.relevantdata[index + 3]
+        if tsce == 0x2 and (sat == 0x31 or sat == 0x21):
+            data = self.relevantdata[index:index + item.size]
+        else:
+            return
 
-            if self.is_exception(item):
-                continue
+        item.update_vars(data)
 
-            self.items.append([item, self.scdstartoff + index])
+        if self.is_exception(item):
+            return
+
+        self.items.append([item, self.scdstartoff + index])
+
+    def addtodoors(self, index, door):
+        if len(self.relevantdata[index:]) < door.size:
+            return
+        tsce = self.relevantdata[index + 2]
+        sat = self.relevantdata[index + 3]
+        if tsce == 0x1 and (sat == 0x31 or sat == 0x21):
+            data = self.relevantdata[index:index + door.size]
+        else:
+            return
+
+        door.update_vars(data)
+
+        self.doors.append([door, self.scdstartoff + index])
+
+    def addtoenemies(self, index, enemy):
+        pass
 
     def is_exception(self, item: AOTOpcode):
         match self.name:
@@ -137,7 +171,10 @@ class Room:
                 return True
 
     def get_items(self) -> list[str]:
-        return [key for key, value in self.items]
+        return [item for item, offset in self.items]
+
+    def get_doors(self):
+        return [door for door, offset in self.doors]
 
     def get_item_at_index(self, index) -> Item:
         if len(self.items) > 0:
@@ -239,9 +276,6 @@ class RoomHandler(QObject):
     def get_room_names(self):
         return list(roomnames.values())
 
-    def get_all_items(self):
-        return [f for f in itemnames]
-
     def find_room(self, name: str):
         for room in self.rooms:
             if room.name == name:
@@ -257,6 +291,12 @@ class RoomHandler(QObject):
         items = room.get_items()
         if len(items) > 0:
             return items
+
+    def get_room_doors(self, roomname: str):
+        room = self.find_room(roomname)
+        doors = room.get_doors()
+        if len(doors) > 0:
+            return doors
 
     def get_item_at_index(self, roomname: str, index: int):
         if self.room_has_items(roomname):

@@ -1,13 +1,30 @@
 from uihandler import *
-import os
-import sys
-import shutil
+from tools import *
 
 
-class ItemManager:
-    def __init__(self, ui, roomhandler):
+class Manager:
+    def __init__(self, ui: MyWindow, roomhandler: RoomHandler):
         self.ui = ui
         self.rh = roomhandler
+
+    def roomfocuschange(self):
+        pass
+
+    def swap(self):
+        pass
+
+    def restoreroom(self):
+        pass
+
+    def restoreallrooms(self):
+        pass
+
+
+
+
+class ItemManager(Manager):
+    def __init__(self, ui: MyWindow, roomhandler: RoomHandler):
+        super().__init__(ui, roomhandler)
 
     def roomfocuschange(self):
         self.room = self.ui.get_Room()

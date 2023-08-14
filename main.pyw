@@ -3,17 +3,19 @@ import os
 import sys
 import shutil
 from itemmanager import ItemManager
+from doormanager import DoorManager
 
 
 class MyApp:
     def __init__(self):
         self.ui = MyWindow()
         self.rh = RoomHandler()
-        self.managerlist = [ItemManager(self.ui, self.rh)]
+        self.managerlist = [ItemManager(self.ui, self.rh), DoorManager(self.ui, self.rh)]
         self.manager = self.managerlist[0]
         self.localconnections()
-        self.startup()
         self.managerconnections()
+        self.startup()
+
 
     def localconnections(self):
         self.ui.connectOpenDir(self.choosedirectory)
@@ -21,23 +23,18 @@ class MyApp:
         self.ui.connectOpenMod(self.open_mod)
         self.ui.connectRestoreRoomItems(self.restoreroom)
         self.ui.connectRestoreAllRoomItems(self.restoreallrooms)
-        self.ui.connectRoomChange_Items(self.roomfocuschange)
-        self.ui.connectItemChange(self.itemfocuschange)
+        self.ui.connectRoomChange(self.roomfocuschange)
         self.ui.connectSwap(self.swap)
         self.ui.connectVerify(self.verify)
         self.ui.connectTabChanged(self.changemanager)
 
     def managerconnections(self):
         self.ui.connectQuantityUpdate(self.managerlist[0].updatequantity)
+        self.ui.connectItemChange(self.managerlist[0].itemfocuschange)
+        self.ui.connectRoomTargetChange(self.managerlist[1].targetfocuschange)
 
     def roomfocuschange(self, row):
         self.manager.roomfocuschange()
-
-    def itemfocuschange(self):
-        self.manager.itemfocuschange()
-
-    def updatequantity(self):
-        self.manager.updatequantity()
 
     def swap(self):
         self.manager.swap()
@@ -50,6 +47,7 @@ class MyApp:
 
     def changemanager(self, value):
         self.manager = self.managerlist[value]
+        self.manager.roomfocuschange()
 
     def choosedirectory(self):
         chosenfolder = QFileDialog.getExistingDirectory() + '/'
@@ -99,7 +97,7 @@ class MyApp:
             self.ui.updateModTitle(self.modname)
             self.rh.progressupdate.connect(self.ui.updateProgress)
             self.rh.update_directorys(self.defaultfolder, self.workingfolder)
-            self.ui.initUI(self.rh.get_room_names(), self.rh.get_all_items())
+            self.ui.initUI(list(roomnames.values()), itemnames)
 
     def create_mod(self):
         if self.get_modname():

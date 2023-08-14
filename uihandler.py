@@ -58,15 +58,16 @@ class MyWindow(QMainWindow):
     def connectQuantityUpdate(self, func):
         self.view.quantitybox.valueChanged.connect(func)
 
-    def connectRoomChange_Items(self, func):
+    def connectRoomChange(self, func):
         self.view.RoomList_Items.currentRowChanged.connect(func)
         self.view.RoomList_Doors.currentRowChanged.connect(func)
-
-    def connectRoomChange_Doors(self, func):
-        self.view.RoomList_Doors.currentRowChanged.connect(func)
+        # self.view.RoomList_Enemies.currentRowChanged.connect(func)
 
     def connectItemChange(self, func):
         self.view.RoomItemsList.clicked.connect(func)
+
+    def connectRoomTargetChange(self, func):
+        self.view.RoomTargetList.currentRowChanged.connect(func)
 
     def connectRestoreRoomItems(self, func):
         self.view.RestoreRoomItemsButton.pressed.connect(func)
@@ -88,8 +89,10 @@ class MyWindow(QMainWindow):
         self.view.itemtree.horizontalHeader().hide()
         self.view.RoomList_Items.addItems(roomlist)
         self.view.RoomList_Doors.addItems(roomlist)
+        self.view.RoomTargetList.addItems(roomlist)
         self.view.itemlist.addItems(itemlist)
         self.view.RoomList_Items.setCurrentRow(0)
+        self.view.RoomList_Doors.setCurrentRow(0)
 
     def get_Room(self):
         index = self.view.tabWidget.currentIndex()
@@ -98,6 +101,9 @@ class MyWindow(QMainWindow):
                 return self.view.RoomList_Items.currentItem().text()
             case 1:
                 return self.view.RoomList_Doors.currentItem().text()
+
+    def get_TargetRoom(self):
+        return self.view.RoomTargetList.currentItem().text()
 
     def get_RoomIndex(self):
         return self.view.RoomList_Items.currentRow()
@@ -126,6 +132,21 @@ class MyWindow(QMainWindow):
         if items:
             self.view.RoomItemsList.addItems([item.itemname for item in items])
             self.view.RoomItemsList.setCurrentRow(0)
+
+    def updateRoomDoors(self, doors: list[AOTOpcode]):
+        self.view.RoomDoorsList.clear()
+        if doors:
+            self.view.RoomDoorsList.addItems([door.doorname for door in doors])
+            self.view.RoomDoorsList.setCurrentRow(0)
+
+    def updateTargetDoorsCams(self, doors: list[AOTOpcode]):
+        self.view.TargetDoorsList.clear()
+        self.view.CamerasList.clear()
+        if doors:
+            self.view.TargetDoorsList.addItems(door.doorname for door in doors)
+            self.view.CamerasList.addItems(f'{door.ncut:02X}' for door in doors)
+            self.view.TargetDoorsList.setCurrentRow(0)
+            self.view.CamerasList.setCurrentRow(0)
 
     def updateItemDetails(self, item: AOTOpcode):
         if item:

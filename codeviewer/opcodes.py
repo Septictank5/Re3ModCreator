@@ -1357,13 +1357,15 @@ class DoorAOTSet(AOTOpcode):
         self.keyid = data[29]
         self.keytype = data[30]
         self.free = data[31]
+        test = f'R' + str((self.nstage + 1)) + f'{self.nroom:02X}'
+        self.doorname = f'DOOR TO {roomnames[test]}, CAM:{self.ncut}'
         self.parameters = f"AOT: {self.aot:02X}, {sce[self.sce]}, SAT: {get_sat_flags(self.sat)}, NFloor: {self.nfloor:02X}, "\
                           f"SUPER: {self.super:02X}, XPOS: {self.xpos.hex(' ')}, ZPOS: {self.zpos.hex(' ')}, " \
                           f"Width: {self.width.hex(' ')}, Depth: {self.depth.hex(' ')}, NextX: {self.nxpos.hex(' ')}, "\
                           f"NextY: {self.nypos.hex(' ')}, NextZ: {self.nzpos.hex(' ')}, " \
                           f"NextYDIR: {self.nydir.hex(' ')}, NextStage: {self.nstage:02X}, " \
                           f"NextRoom: {self.nroom:02X}, NextCut: {self.ncut:02X}, NextNFloor: {self.nnfloor:02X}, " \
-                          f"DO2: {self.do2:02X}, Anim: {dooranim[self.anim]}, Sound: {self.sound:02X}, " \
+                          f"DO2: {self.do2:02X}, Anim: {self.anim:02X}, Sound: {self.sound:02X}, " \
                           f"KeyID: {self.keyid:02X}, KeyType: {self.keytype:02X}, Free: {self.free:02X}"
 
 
@@ -1376,10 +1378,10 @@ class DoorAOTSet4P(AOT4POpcode):
 
     def update_vars(self, data):
         super().update_vars(data)
-        self.pxpos = data[22:24]
-        self.pypos = data[24:26]
-        self.pzpos = data[26:28]
-        self.pdir = data[28:30]
+        self.nxpos = data[22:24]
+        self.nypos = data[24:26]
+        self.nzpos = data[26:28]
+        self.nydir = data[28:30]
         self.nstage = data[30]
         self.nroom = data[31]
         self.ncut = data[32]
@@ -1390,11 +1392,13 @@ class DoorAOTSet4P(AOT4POpcode):
         self.keyid = data[37]
         self.keytype = data[38]
         self.free = data[39]
+        test = f'R' + str((self.nstage + 1)) + f'{self.nroom:02X}'
+        self.doorname = f'DOOR TO {roomnames[test]}, CAM:{self.ncut}'
         self.parameters = f"AOT: {self.aot:02X}, SCE: {sce[self.sce]}, SAT: {get_sat_flags(self.sat)}, NFloor: {self.nfloor:02X}, "\
                           f"SUPER: {self.super:02X}, XPOS0: {self.xpos0.hex(' ')}, ZPOS0: {self.zpos0.hex(' ')}, " \
                           f"XPOS1: {self.xpos1.hex(' ')}, ZPOS1: {self.zpos1.hex(' ')}, XPOS2: {self.xpos2.hex(' ')}, "\
-                          f"XPOS3: {self.xpos3.hex(' ')}, ZPOS3: {self.zpos3.hex(' ')}, PXPOS: {self.pxpos.hex(' ')}, "\
-                          f"PYPOS: {self.pypos.hex(' ')}, PZPOS: {self.pzpos.hex(' ')}, PDIR: {self.pdir.hex(' ')}, " \
+                          f"XPOS3: {self.xpos3.hex(' ')}, ZPOS3: {self.zpos3.hex(' ')}, PXPOS: {self.nxpos.hex(' ')}, "\
+                          f"PYPOS: {self.nypos.hex(' ')}, PZPOS: {self.nzpos.hex(' ')}, PDIR: {self.nydir.hex(' ')}, " \
                           f"NextStage: {self.nstage:02X}, NextRoom: {self.nroom:02X}, NextCut: {self.ncut:02X}, " \
                           f"NextNFloor: {self.nnfloor:02X}, DO2: {self.do2:02X}, Anim: {dooranim[self.anim]}, " \
                           f"Sound: {self.sound:02X}, KeyID: {self.keyid:02X}, KeyType: {self.keytype:02X}, " \

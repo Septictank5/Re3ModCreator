@@ -1,0 +1,4033 @@
+{
+    "Warehouse": [
+        {
+            "from": "Warehouse Save Room",
+            "stage": 0,
+            "room": 1,
+            "camera": 6,
+            "nnfloor": 4,
+            "xpos": -18808,
+            "ypos": -7200,
+            "zpos": -11475,
+            "ydir": 0
+        },
+        {
+            "from": "Warehouse Alley",
+            "stage": 0,
+            "room": 1,
+            "camera": 7,
+            "nnfloor": 2,
+            "xpos": -4434,
+            "ypos": -3600,
+            "zpos": -27933,
+            "ydir": 3136
+        },
+        {
+            "from": "Scenario Start",
+            "stage": 0,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 0,
+            "ypos": 0,
+            "zpos": 0,
+            "ydir": 0
+        },
+        {
+            "from": "Warehouse Alley 2",
+            "stage": 0,
+            "room": 1,
+            "camera": 7,
+            "nnfloor": 2,
+            "xpos": -4345,
+            "ypos": -3600,
+            "zpos": -28176,
+            "ydir": 3136
+        }
+    ],
+    "Warehouse Save Room": [
+        {
+            "from": "Warehouse",
+            "stage": 0,
+            "room": 0,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -20400,
+            "ypos": 0,
+            "zpos": -20790,
+            "ydir": 2048
+        }
+    ],
+    "Warehouse Alley": [
+        {
+            "from": "Warehouse",
+            "stage": 0,
+            "room": 2,
+            "camera": 0,
+            "nnfloor": 2,
+            "xpos": -5450,
+            "ypos": -3600,
+            "zpos": -26750,
+            "ydir": 1536
+        },
+        {
+            "from": "Warehouse Street",
+            "stage": 0,
+            "room": 2,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -27780,
+            "ypos": 0,
+            "zpos": -27439,
+            "ydir": 4064
+        }
+    ],
+    "Warehouse Alley 2": [
+        {
+            "from": "Warehouse",
+            "stage": 0,
+            "room": 29,
+            "camera": 0,
+            "nnfloor": 2,
+            "xpos": -5450,
+            "ypos": -3600,
+            "zpos": -26750,
+            "ydir": 1536
+        },
+        {
+            "from": "Warehouse Street 2",
+            "stage": 0,
+            "room": 29,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -27780,
+            "ypos": 0,
+            "zpos": -27439,
+            "ydir": 4064
+        }
+    ],
+    "Warehouse Street": [
+        {
+            "from": "Warehouse Alley",
+            "stage": 0,
+            "room": 3,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": 21964,
+            "ypos": 0,
+            "zpos": -18184,
+            "ydir": 2176
+        },
+        {
+            "from": "Basement Alley",
+            "stage": 0,
+            "room": 3,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 18519,
+            "ypos": 0,
+            "zpos": -24822,
+            "ydir": 0
+        },
+        {
+            "from": "Basement Alley",
+            "stage": 0,
+            "room": 3,
+            "camera": 13,
+            "nnfloor": 0,
+            "xpos": -19800,
+            "ypos": 0,
+            "zpos": -4400,
+            "ydir": 2560
+        },
+        {
+            "from": "Bar Jack Alley",
+            "stage": 0,
+            "room": 3,
+            "camera": 12,
+            "nnfloor": 0,
+            "xpos": -24743,
+            "ypos": 0,
+            "zpos": 9473,
+            "ydir": 512
+        }
+    ],
+    "Basement Alley": [
+        {
+            "from": "Warehouse Street",
+            "stage": 0,
+            "room": 4,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 22767,
+            "ypos": 0,
+            "zpos": -16964,
+            "ydir": 2048
+        },
+        {
+            "from": "Warehouse Street",
+            "stage": 0,
+            "room": 4,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -12610,
+            "ypos": 0,
+            "zpos": 2392,
+            "ydir": 499
+        },
+        {
+            "from": "Bar Jack Street",
+            "stage": 0,
+            "room": 4,
+            "camera": 11,
+            "nnfloor": 0,
+            "xpos": -23888,
+            "ypos": 0,
+            "zpos": -10267,
+            "ydir": 512
+        }
+    ],
+    "Bar Jack Alley": [
+        {
+            "from": "Warehouse Street",
+            "stage": 0,
+            "room": 5,
+            "camera": 0,
+            "nnfloor": 2,
+            "xpos": 16504,
+            "ypos": -3600,
+            "zpos": -11315,
+            "ydir": 2520
+        },
+        {
+            "from": "Bar Jack Street",
+            "stage": 0,
+            "room": 5,
+            "camera": 10,
+            "nnfloor": 2,
+            "xpos": -22416,
+            "ypos": -3600,
+            "zpos": -1567,
+            "ydir": 0
+        },
+        {
+            "from": "Bar Jack",
+            "stage": 0,
+            "room": 5,
+            "camera": 15,
+            "nnfloor": 1,
+            "xpos": -11800,
+            "ypos": -1800,
+            "zpos": -25000,
+            "ydir": 2560
+        },
+        {
+            "from": "Barricade Alley",
+            "stage": 0,
+            "room": 5,
+            "camera": 6,
+            "nnfloor": 2,
+            "xpos": 6454,
+            "ypos": -3600,
+            "zpos": 22439,
+            "ydir": 1024
+        }
+    ],
+    "Bar Jack Street": [
+        {
+            "from": "Basement Alley",
+            "stage": 0,
+            "room": 6,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": 27688,
+            "ypos": -1800,
+            "zpos": -16978,
+            "ydir": 2560
+        },
+        {
+            "from": "Bar Jack Alley",
+            "stage": 0,
+            "room": 6,
+            "camera": 10,
+            "nnfloor": 1,
+            "xpos": -8357,
+            "ypos": -1800,
+            "zpos": 20612,
+            "ydir": 2048
+        },
+        {
+            "from": "Bar Jack",
+            "stage": 0,
+            "room": 6,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": 11154,
+            "ypos": 0,
+            "zpos": -15748,
+            "ydir": 1536
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 6,
+            "camera": 6,
+            "nnfloor": 1,
+            "xpos": -3272,
+            "ypos": -1800,
+            "zpos": -6874,
+            "ydir": 1536
+        }
+    ],
+    "Barricade Alley": [
+        {
+            "from": "Bar Jack Alley",
+            "stage": 0,
+            "room": 8,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 12300,
+            "ypos": 0,
+            "zpos": -25700,
+            "ydir": 3072
+        },
+        {
+            "from": "Hydrant Alley",
+            "stage": 0,
+            "room": 8,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -10322,
+            "ypos": -20,
+            "zpos": -22334,
+            "ydir": 984
+        }
+    ],
+    "Bar Jack": [
+        {
+            "from": "Bar Jack Alley",
+            "stage": 0,
+            "room": 7,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -22837,
+            "ypos": 0,
+            "zpos": -15865,
+            "ydir": 512
+        },
+        {
+            "from": "Bar Jack Street",
+            "stage": 0,
+            "room": 7,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -15476,
+            "ypos": 0,
+            "zpos": -26217,
+            "ydir": 3584
+        },
+        {
+            "from": "Bar Jack Alley 2",
+            "stage": 0,
+            "room": 7,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -22837,
+            "ypos": 0,
+            "zpos": -15865,
+            "ydir": 512
+        },
+        {
+            "from": "Bar Jack Street 2",
+            "stage": 0,
+            "room": 7,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -15476,
+            "ypos": 0,
+            "zpos": -26217,
+            "ydir": 3584
+        }
+    ],
+    "Bar Jack Alley 2": [
+        {
+            "from": "Bar Jack",
+            "stage": 0,
+            "room": 32,
+            "camera": 15,
+            "nnfloor": 1,
+            "xpos": -11800,
+            "ypos": -1800,
+            "zpos": -25000,
+            "ydir": 2560
+        },
+        {
+            "from": "Warehouse Street 2",
+            "stage": 0,
+            "room": 32,
+            "camera": 0,
+            "nnfloor": 2,
+            "xpos": 16504,
+            "ypos": -3600,
+            "zpos": -11315,
+            "ydir": 2520
+        },
+        {
+            "from": "Bar Jack Street 2",
+            "stage": 0,
+            "room": 32,
+            "camera": 10,
+            "nnfloor": 2,
+            "xpos": -22416,
+            "ypos": -3600,
+            "zpos": -1567,
+            "ydir": 0
+        },
+        {
+            "from": "Barricade Alley 2",
+            "stage": 0,
+            "room": 32,
+            "camera": 6,
+            "nnfloor": 2,
+            "xpos": 6454,
+            "ypos": -3600,
+            "zpos": 22439,
+            "ydir": 1024
+        }
+    ],
+    "Bar Jack Street 2": [
+        {
+            "from": "Bar Jack",
+            "stage": 0,
+            "room": 33,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": 11154,
+            "ypos": 0,
+            "zpos": -15748,
+            "ydir": 1536
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 33,
+            "camera": 6,
+            "nnfloor": 1,
+            "xpos": -3272,
+            "ypos": -1800,
+            "zpos": -6874,
+            "ydir": 1536
+        },
+        {
+            "from": "Basement Alley 2",
+            "stage": 0,
+            "room": 33,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": 27688,
+            "ypos": -1800,
+            "zpos": -16978,
+            "ydir": 2560
+        },
+        {
+            "from": "Bar Jack Alley 2",
+            "stage": 0,
+            "room": 33,
+            "camera": 10,
+            "nnfloor": 1,
+            "xpos": -8357,
+            "ypos": -1800,
+            "zpos": 20612,
+            "ydir": 2048
+        }
+    ],
+    "Hydrant Alley": [
+        {
+            "from": "Barricade Alley",
+            "stage": 0,
+            "room": 9,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -9088,
+            "ypos": 0,
+            "zpos": -21365,
+            "ydir": 3072
+        },
+        {
+            "from": "RPD Street",
+            "stage": 0,
+            "room": 9,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": 17607,
+            "ypos": 0,
+            "zpos": -5047,
+            "ydir": 2120
+        },
+        {
+            "from": "Hydrant Save",
+            "stage": 0,
+            "room": 9,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": 12005,
+            "ypos": 0,
+            "zpos": -4080,
+            "ydir": 1024
+        }
+    ],
+    "Hydrant Save": [
+        {
+            "from": "Hydrant Alley",
+            "stage": 0,
+            "room": 12,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -23301,
+            "ypos": 0,
+            "zpos": -26473,
+            "ydir": 3256
+        },
+        {
+            "from": "Hydrant Alley 2",
+            "stage": 0,
+            "room": 12,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -23301,
+            "ypos": 0,
+            "zpos": -26473,
+            "ydir": 3256
+        }
+    ],
+    "RPD Street": [
+        {
+            "from": "Hydrant Alley",
+            "stage": 0,
+            "room": 10,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -3309,
+            "ypos": 0,
+            "zpos": -11671,
+            "ydir": 4056
+        },
+        {
+            "from": "RPD Front",
+            "stage": 0,
+            "room": 10,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -14969,
+            "ypos": 0,
+            "zpos": 19480,
+            "ydir": 1024
+        }
+    ],
+    "Back Alley": [
+        {
+            "from": "Hydrant Alley",
+            "stage": 0,
+            "room": 14,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 8060,
+            "ypos": 0,
+            "zpos": -17525,
+            "ydir": 2088
+        },
+        {
+            "from": "Alleyway Outside Pharmacy",
+            "stage": 0,
+            "room": 14,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -21152,
+            "ypos": 0,
+            "zpos": -17783,
+            "ydir": 0
+        },
+        {
+            "from": "Hydrant Alley 2",
+            "stage": 0,
+            "room": 14,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 8060,
+            "ypos": 0,
+            "zpos": -17525,
+            "ydir": 2088
+        }
+    ],
+    "RPD Front": [
+        {
+            "from": "RPD Street",
+            "stage": 0,
+            "room": 16,
+            "camera": 0,
+            "nnfloor": 3,
+            "xpos": 13991,
+            "ypos": -5400,
+            "zpos": -25219,
+            "ydir": 3024
+        },
+        {
+            "from": "RPD Hall",
+            "stage": 0,
+            "room": 16,
+            "camera": 1,
+            "nnfloor": 3,
+            "xpos": 14126,
+            "ypos": -5400,
+            "zpos": -10860,
+            "ydir": 1024
+        }
+    ],
+    "Boutique": [
+        {
+            "from": "RPD Street",
+            "stage": 0,
+            "room": 15,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -20862,
+            "ypos": 0,
+            "zpos": -17696,
+            "ydir": 0
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -18661,
+            "ypos": 0,
+            "zpos": -12729,
+            "ydir": 512
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -18661,
+            "ypos": 0,
+            "zpos": -12729,
+            "ydir": 512
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -17210,
+            "ypos": 0,
+            "zpos": -11245,
+            "ydir": 512
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -17210,
+            "ypos": 0,
+            "zpos": -11245,
+            "ydir": 512
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -15490,
+            "ypos": 0,
+            "zpos": -9551,
+            "ydir": 512
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -15490,
+            "ypos": 0,
+            "zpos": -9551,
+            "ydir": 512
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -14430,
+            "ypos": 0,
+            "zpos": -9275,
+            "ydir": 1280
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -14430,
+            "ypos": 0,
+            "zpos": -9275,
+            "ydir": 1280
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -12916,
+            "ypos": 0,
+            "zpos": -10825,
+            "ydir": 1536
+        },
+        {
+            "from": "Boutique",
+            "stage": 0,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -12916,
+            "ypos": 0,
+            "zpos": -10825,
+            "ydir": 1536
+        }
+    ],
+    "Pharmacy Room 1": [
+        {
+            "from": "Alleyway Outside Pharmacy",
+            "stage": 0,
+            "room": 27,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -7798,
+            "ypos": 0,
+            "zpos": -22475,
+            "ydir": 3072
+        },
+        {
+            "from": "Pharmacy Room 2",
+            "stage": 0,
+            "room": 27,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -19220,
+            "ypos": 0,
+            "zpos": -14940,
+            "ydir": 0
+        }
+    ],
+    "Hydrant Alley 2": [
+        {
+            "from": "Hydrant Save",
+            "stage": 0,
+            "room": 35,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": 12005,
+            "ypos": 0,
+            "zpos": -4080,
+            "ydir": 1024
+        },
+        {
+            "from": "Hydrant Save",
+            "stage": 0,
+            "room": 35,
+            "camera": 15,
+            "nnfloor": 0,
+            "xpos": 12005,
+            "ypos": 0,
+            "zpos": -4080,
+            "ydir": 1024
+        },
+        {
+            "from": "Back Alley",
+            "stage": 0,
+            "room": 35,
+            "camera": 18,
+            "nnfloor": 0,
+            "xpos": -22845,
+            "ypos": 0,
+            "zpos": -5130,
+            "ydir": 0
+        },
+        {
+            "from": "Barricade Alley 2",
+            "stage": 0,
+            "room": 35,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -9088,
+            "ypos": 0,
+            "zpos": -21365,
+            "ydir": 3072
+        },
+        {
+            "from": "Barricade Alley 2",
+            "stage": 0,
+            "room": 35,
+            "camera": 11,
+            "nnfloor": 0,
+            "xpos": -9088,
+            "ypos": 0,
+            "zpos": -21365,
+            "ydir": 3072
+        },
+        {
+            "from": "RPD Street 2",
+            "stage": 0,
+            "room": 35,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": 17607,
+            "ypos": 0,
+            "zpos": -5047,
+            "ydir": 2120
+        },
+        {
+            "from": "RPD Street 2",
+            "stage": 0,
+            "room": 35,
+            "camera": 16,
+            "nnfloor": 0,
+            "xpos": 17607,
+            "ypos": 0,
+            "zpos": -5047,
+            "ydir": 2120
+        }
+    ],
+    "Alleyway Outside Pharmacy": [
+        {
+            "from": "Back Alley",
+            "stage": 0,
+            "room": 11,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 7100,
+            "ypos": 0,
+            "zpos": -330,
+            "ydir": 2048
+        },
+        {
+            "from": "Back Alley",
+            "stage": 0,
+            "room": 11,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": 7100,
+            "ypos": 0,
+            "zpos": -330,
+            "ydir": 2048
+        },
+        {
+            "from": "Pharmacy Room 1",
+            "stage": 0,
+            "room": 11,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": 119,
+            "ypos": 0,
+            "zpos": -17443,
+            "ydir": 1024
+        }
+    ],
+    "RPD Hall": [
+        {
+            "from": "RPD Front",
+            "stage": 0,
+            "room": 17,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": -13720,
+            "ypos": -1800,
+            "zpos": -26175,
+            "ydir": 3072
+        },
+        {
+            "from": "RPD Big Office",
+            "stage": 0,
+            "room": 17,
+            "camera": 4,
+            "nnfloor": 1,
+            "xpos": -24803,
+            "ypos": -1800,
+            "zpos": -2609,
+            "ydir": 72
+        },
+        {
+            "from": "RPD Front 2",
+            "stage": 0,
+            "room": 17,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": -13720,
+            "ypos": -1800,
+            "zpos": -26175,
+            "ydir": 3072
+        }
+    ],
+    "RPD Front 2": [
+        {
+            "from": "RPD Hall",
+            "stage": 0,
+            "room": 37,
+            "camera": 1,
+            "nnfloor": 3,
+            "xpos": 14126,
+            "ypos": -5400,
+            "zpos": -10860,
+            "ydir": 1024
+        },
+        {
+            "from": "RPD Street 2",
+            "stage": 0,
+            "room": 37,
+            "camera": 0,
+            "nnfloor": 3,
+            "xpos": 13991,
+            "ypos": -5400,
+            "zpos": -25219,
+            "ydir": 3024
+        }
+    ],
+    "RPD Big Office": [
+        {
+            "from": "RPD Hall",
+            "stage": 0,
+            "room": 18,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -5877,
+            "ypos": 0,
+            "zpos": -9934,
+            "ydir": 2048
+        },
+        {
+            "from": "RPD Evidence Room",
+            "stage": 0,
+            "room": 18,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -23474,
+            "ypos": 0,
+            "zpos": -9534,
+            "ydir": 1024
+        },
+        {
+            "from": "RPD Evidence Room",
+            "stage": 0,
+            "room": 18,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -23474,
+            "ypos": 0,
+            "zpos": -9534,
+            "ydir": 1024
+        }
+    ],
+    "RPD Evidence Room": [
+        {
+            "from": "RPD Big Office",
+            "stage": 0,
+            "room": 19,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -23332,
+            "ypos": 0,
+            "zpos": -26452,
+            "ydir": 3152
+        },
+        {
+            "from": "RPD Stairs 1F",
+            "stage": 0,
+            "room": 19,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -16766,
+            "ypos": 0,
+            "zpos": -25742,
+            "ydir": -1971
+        }
+    ],
+    "RPD Stairs 1F": [
+        {
+            "from": "RPD Evidence Room",
+            "stage": 0,
+            "room": 20,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -25684,
+            "ypos": 0,
+            "zpos": -24276,
+            "ydir": 0
+        },
+        {
+            "from": "RPD Evidence Room",
+            "stage": 0,
+            "room": 20,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -25684,
+            "ypos": 0,
+            "zpos": -24276,
+            "ydir": 0
+        },
+        {
+            "from": "RPD Corridor",
+            "stage": 0,
+            "room": 20,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -25765,
+            "ypos": 0,
+            "zpos": -16466,
+            "ydir": 0
+        },
+        {
+            "from": "RPD Dark Room",
+            "stage": 0,
+            "room": 20,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -15571,
+            "ypos": 0,
+            "zpos": -12925,
+            "ydir": 3072
+        }
+    ],
+    "RPD Corridor": [
+        {
+            "from": "RPD Stairs 1F",
+            "stage": 0,
+            "room": 21,
+            "camera": 8,
+            "nnfloor": 0,
+            "xpos": -2499,
+            "ypos": 0,
+            "zpos": -17552,
+            "ydir": -2007
+        },
+        {
+            "from": "RPD Meeting Room",
+            "stage": 0,
+            "room": 21,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -16930,
+            "ypos": 0,
+            "zpos": -10850,
+            "ydir": 3072
+        }
+    ],
+    "RPD Dark Room": [
+        {
+            "from": "RPD Stairs 1F",
+            "stage": 0,
+            "room": 23,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -15352,
+            "ypos": 0,
+            "zpos": -14926,
+            "ydir": -3067
+        }
+    ],
+    "RPD Meeting Room": [
+        {
+            "from": "RPD Corridor",
+            "stage": 0,
+            "room": 22,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -21911,
+            "ypos": 0,
+            "zpos": -8674,
+            "ydir": 1024
+        }
+    ],
+    "RPD STARS Corridor": [
+        {
+            "from": "RPD Stairs 2F",
+            "stage": 0,
+            "room": 25,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -24926,
+            "ypos": 0,
+            "zpos": -3120,
+            "ydir": 2048
+        },
+        {
+            "from": "STARS Office",
+            "stage": 0,
+            "room": 25,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -25048,
+            "ypos": 0,
+            "zpos": -14827,
+            "ydir": 2048
+        }
+    ],
+    "RPD Stairs 2F": [
+        {
+            "from": "RPD STARS Corridor",
+            "stage": 0,
+            "room": 24,
+            "camera": 7,
+            "nnfloor": 2,
+            "xpos": -25660,
+            "ypos": -3600,
+            "zpos": -15640,
+            "ydir": 0
+        }
+    ],
+    "STARS Office": [
+        {
+            "from": "RPD STARS Corridor",
+            "stage": 0,
+            "room": 26,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -26225,
+            "ypos": 0,
+            "zpos": -17060,
+            "ydir": 0
+        }
+    ],
+    "Pharmacy Room 2": [
+        {
+            "from": "Pharmacy Room 1",
+            "stage": 0,
+            "room": 28,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -20985,
+            "ypos": 0,
+            "zpos": -14844,
+            "ydir": 2048
+        }
+    ],
+    "Warehouse Street 2": [
+        {
+            "from": "Warehouse Alley 2",
+            "stage": 0,
+            "room": 30,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": 21964,
+            "ypos": 0,
+            "zpos": -18184,
+            "ydir": 2176
+        },
+        {
+            "from": "Basement Alley 2",
+            "stage": 0,
+            "room": 30,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 18519,
+            "ypos": 0,
+            "zpos": -24822,
+            "ydir": 0
+        },
+        {
+            "from": "Basement Alley 2",
+            "stage": 0,
+            "room": 30,
+            "camera": 13,
+            "nnfloor": 0,
+            "xpos": -19800,
+            "ypos": 0,
+            "zpos": -4400,
+            "ydir": 2560
+        },
+        {
+            "from": "Bar Jack Alley 2",
+            "stage": 0,
+            "room": 30,
+            "camera": 12,
+            "nnfloor": 0,
+            "xpos": -24743,
+            "ypos": 0,
+            "zpos": 9473,
+            "ydir": 512
+        }
+    ],
+    "Basement Alley 2": [
+        {
+            "from": "Warehouse Street 2",
+            "stage": 0,
+            "room": 31,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 22767,
+            "ypos": 0,
+            "zpos": -16964,
+            "ydir": 2048
+        },
+        {
+            "from": "Warehouse Street 2",
+            "stage": 0,
+            "room": 31,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -12610,
+            "ypos": 0,
+            "zpos": 2392,
+            "ydir": 499
+        },
+        {
+            "from": "Bar Jack Street 2",
+            "stage": 0,
+            "room": 31,
+            "camera": 11,
+            "nnfloor": 0,
+            "xpos": -23888,
+            "ypos": 0,
+            "zpos": -10267,
+            "ydir": 512
+        }
+    ],
+    "Barricade Alley 2": [
+        {
+            "from": "Bar Jack Alley 2",
+            "stage": 0,
+            "room": 34,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 12300,
+            "ypos": 0,
+            "zpos": -25700,
+            "ydir": 3072
+        },
+        {
+            "from": "Hydrant Alley 2",
+            "stage": 0,
+            "room": 34,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -10322,
+            "ypos": -20,
+            "zpos": -22334,
+            "ydir": 984
+        }
+    ],
+    "RPD Street 2": [
+        {
+            "from": "Hydrant Alley 2",
+            "stage": 0,
+            "room": 36,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -3309,
+            "ypos": 0,
+            "zpos": -11671,
+            "ydir": 4056
+        },
+        {
+            "from": "RPD Front 2",
+            "stage": 0,
+            "room": 36,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -14969,
+            "ypos": 0,
+            "zpos": 19480,
+            "ydir": 1024
+        },
+        {
+            "from": "Parasite Alley",
+            "stage": 0,
+            "room": 36,
+            "camera": 8,
+            "nnfloor": 0,
+            "xpos": 19834,
+            "ypos": 0,
+            "zpos": -26408,
+            "ydir": 2056
+        }
+    ],
+    "Parasite Alley": [
+        {
+            "from": "RPD Street 2",
+            "stage": 1,
+            "room": 26,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -2623,
+            "ypos": 0,
+            "zpos": -2287,
+            "ydir": 0
+        },
+        {
+            "from": "Fire Hose Alley",
+            "stage": 1,
+            "room": 26,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": 27459,
+            "ypos": 0,
+            "zpos": 9236,
+            "ydir": 2080
+        }
+    ],
+    "Fire Hose Alley": [
+        {
+            "from": "Bus Street",
+            "stage": 1,
+            "room": 24,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -16200,
+            "ypos": 0,
+            "zpos": 10823,
+            "ydir": 1064
+        },
+        {
+            "from": "Parasite Alley",
+            "stage": 1,
+            "room": 24,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17251,
+            "ypos": 0,
+            "zpos": -14314,
+            "ydir": 4032
+        }
+    ],
+    "Parking Lot": [
+        {
+            "from": "Bus Street",
+            "stage": 1,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 9,
+            "xpos": -10432,
+            "ypos": -16200,
+            "zpos": -23435,
+            "ydir": 125
+        },
+        {
+            "from": "Bus Street",
+            "stage": 1,
+            "room": 1,
+            "camera": 12,
+            "nnfloor": 0,
+            "xpos": -26279,
+            "ypos": 0,
+            "zpos": -18086,
+            "ydir": 816
+        },
+        {
+            "from": "Parking Lot Save",
+            "stage": 1,
+            "room": 1,
+            "camera": 5,
+            "nnfloor": 9,
+            "xpos": 3670,
+            "ypos": -16200,
+            "zpos": 15000,
+            "ydir": 2048
+        }
+    ],
+    "Bus Street": [
+        {
+            "from": "Parking Lot",
+            "stage": 1,
+            "room": 0,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -1625,
+            "ypos": 0,
+            "zpos": 12210,
+            "ydir": 2048
+        },
+        {
+            "from": "Parking Lot",
+            "stage": 1,
+            "room": 0,
+            "camera": 11,
+            "nnfloor": 0,
+            "xpos": -13080,
+            "ypos": 0,
+            "zpos": 17750,
+            "ydir": 0
+        },
+        {
+            "from": "Fire Hose Alley",
+            "stage": 1,
+            "room": 0,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -12426,
+            "ypos": 0,
+            "zpos": -26535,
+            "ydir": 3096
+        }
+    ],
+    "Parking Lot Save": [
+        {
+            "from": "Parking Lot",
+            "stage": 1,
+            "room": 27,
+            "camera": 0,
+            "nnfloor": 9,
+            "xpos": 5215,
+            "ypos": -16200,
+            "zpos": 14885,
+            "ydir": 0
+        },
+        {
+            "from": "Parking Lot Back",
+            "stage": 1,
+            "room": 27,
+            "camera": 1,
+            "nnfloor": 9,
+            "xpos": 12095,
+            "ypos": -16200,
+            "zpos": 19260,
+            "ydir": 1024
+        }
+    ],
+    "Construction Site": [
+        {
+            "from": "Parking Lot Back",
+            "stage": 1,
+            "room": 3,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -19652,
+            "ypos": 0,
+            "zpos": -1900,
+            "ydir": 0
+        },
+        {
+            "from": "Restaurant Front",
+            "stage": 1,
+            "room": 3,
+            "camera": 5,
+            "nnfloor": 1,
+            "xpos": -2369,
+            "ypos": -1800,
+            "zpos": 11775,
+            "ydir": 1024
+        }
+    ],
+    "Parking Lot Back": [
+        {
+            "from": "Construction Site",
+            "stage": 1,
+            "room": 2,
+            "camera": 3,
+            "nnfloor": 1,
+            "xpos": 11737,
+            "ypos": -1800,
+            "zpos": 4210,
+            "ydir": 2048
+        },
+        {
+            "from": "Construction Site",
+            "stage": 1,
+            "room": 2,
+            "camera": 3,
+            "nnfloor": 1,
+            "xpos": 11737,
+            "ypos": -1800,
+            "zpos": 4210,
+            "ydir": 2048
+        },
+        {
+            "from": "Parking Lot Save",
+            "stage": 1,
+            "room": 2,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 2640,
+            "ypos": 0,
+            "zpos": -21655,
+            "ydir": 3072
+        }
+    ],
+    "Restaurant Front": [
+        {
+            "from": "Construction Site",
+            "stage": 1,
+            "room": 5,
+            "camera": 1,
+            "nnfloor": 1,
+            "xpos": -8743,
+            "ypos": -1800,
+            "zpos": -24284,
+            "ydir": 3072
+        },
+        {
+            "from": "Shopping Alley",
+            "stage": 1,
+            "room": 5,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": -17930,
+            "ypos": -1800,
+            "zpos": -20692,
+            "ydir": 1024
+        },
+        {
+            "from": "Restaurant",
+            "stage": 1,
+            "room": 5,
+            "camera": 8,
+            "nnfloor": 3,
+            "xpos": 13810,
+            "ypos": -5400,
+            "zpos": 4727,
+            "ydir": 208
+        },
+        {
+            "from": "Restaurant",
+            "stage": 1,
+            "room": 5,
+            "camera": 8,
+            "nnfloor": 3,
+            "xpos": 13810,
+            "ypos": -5400,
+            "zpos": 4727,
+            "ydir": 208
+        }
+    ],
+    "Power Station Access": [
+        {
+            "from": "Power Station Front",
+            "stage": 1,
+            "room": 19,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17820,
+            "ypos": 0,
+            "zpos": -11904,
+            "ydir": 1024
+        },
+        {
+            "from": "Power Station",
+            "stage": 1,
+            "room": 19,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -11610,
+            "ypos": 0,
+            "zpos": -13312,
+            "ydir": 7144
+        }
+    ],
+    "Power Station": [
+        {
+            "from": "Power Station Front",
+            "stage": 1,
+            "room": 20,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -3368,
+            "ypos": 0,
+            "zpos": -12497,
+            "ydir": 1008
+        },
+        {
+            "from": "Power Station Access",
+            "stage": 1,
+            "room": 20,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -11447,
+            "ypos": 0,
+            "zpos": -15350,
+            "ydir": 1024
+        }
+    ],
+    "Shopping Alley": [
+        {
+            "from": "Restaurant Front",
+            "stage": 1,
+            "room": 6,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 15965,
+            "ypos": 0,
+            "zpos": -26019,
+            "ydir": 3072
+        },
+        {
+            "from": "Press Street",
+            "stage": 1,
+            "room": 6,
+            "camera": 8,
+            "nnfloor": 1,
+            "xpos": -24267,
+            "ypos": -1800,
+            "zpos": -9017,
+            "ydir": 0
+        },
+        {
+            "from": "Restaurant",
+            "stage": 1,
+            "room": 6,
+            "camera": 4,
+            "nnfloor": 2,
+            "xpos": 16378,
+            "ypos": -3600,
+            "zpos": 4484,
+            "ydir": 1864
+        },
+        {
+            "from": "Restaurant",
+            "stage": 1,
+            "room": 6,
+            "camera": 4,
+            "nnfloor": 2,
+            "xpos": 16378,
+            "ypos": -3600,
+            "zpos": 4484,
+            "ydir": 1864
+        },
+        {
+            "from": "Restaurant Basement",
+            "stage": 1,
+            "room": 6,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": 16147,
+            "ypos": 0,
+            "zpos": -10359,
+            "ydir": 2304
+        },
+        {
+            "from": "Shopping Save",
+            "stage": 1,
+            "room": 6,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -1866,
+            "ypos": 0,
+            "zpos": -8243,
+            "ydir": 1024
+        }
+    ],
+    "Restaurant": [
+        {
+            "from": "Restaurant Front",
+            "stage": 1,
+            "room": 17,
+            "camera": 10,
+            "nnfloor": 0,
+            "xpos": 2837,
+            "ypos": 0,
+            "zpos": -14844,
+            "ydir": 2048
+        },
+        {
+            "from": "Restaurant Front",
+            "stage": 1,
+            "room": 17,
+            "camera": 27,
+            "nnfloor": 0,
+            "xpos": 2837,
+            "ypos": 0,
+            "zpos": -14844,
+            "ydir": 2048
+        },
+        {
+            "from": "Shopping Alley",
+            "stage": 1,
+            "room": 17,
+            "camera": 25,
+            "nnfloor": 0,
+            "xpos": -24610,
+            "ypos": 0,
+            "zpos": -9325,
+            "ydir": 0
+        },
+        {
+            "from": "Shopping Alley",
+            "stage": 1,
+            "room": 17,
+            "camera": 8,
+            "nnfloor": 0,
+            "xpos": -24610,
+            "ypos": 0,
+            "zpos": -9325,
+            "ydir": 0
+        },
+        {
+            "from": "Restaurant Basement",
+            "stage": 1,
+            "room": 17,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -13756,
+            "ypos": 0,
+            "zpos": -18488,
+            "ydir": 1000
+        },
+        {
+            "from": "Restaurant Basement",
+            "stage": 1,
+            "room": 17,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -13756,
+            "ypos": 0,
+            "zpos": -18488,
+            "ydir": 1000
+        },
+        {
+            "from": "Restaurant Basement",
+            "stage": 1,
+            "room": 17,
+            "camera": 22,
+            "nnfloor": 0,
+            "xpos": -13756,
+            "ypos": 0,
+            "zpos": -18488,
+            "ydir": 1000
+        },
+        {
+            "from": "Restaurant Basement",
+            "stage": 1,
+            "room": 17,
+            "camera": 22,
+            "nnfloor": 0,
+            "xpos": -13756,
+            "ypos": 0,
+            "zpos": -18488,
+            "ydir": 1000
+        }
+    ],
+    "Press Street": [
+        {
+            "from": "Shopping Alley",
+            "stage": 1,
+            "room": 7,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": 1540,
+            "ypos": -1800,
+            "zpos": -6820,
+            "ydir": 2048
+        },
+        {
+            "from": "Shopping Alley",
+            "stage": 1,
+            "room": 7,
+            "camera": 10,
+            "nnfloor": 1,
+            "xpos": 1540,
+            "ypos": -1800,
+            "zpos": -6820,
+            "ydir": 2048
+        },
+        {
+            "from": "Municipal Alley",
+            "stage": 1,
+            "room": 7,
+            "camera": 2,
+            "nnfloor": 1,
+            "xpos": -18971,
+            "ypos": -1800,
+            "zpos": -6981,
+            "ydir": 4096
+        },
+        {
+            "from": "Press Offices",
+            "stage": 1,
+            "room": 7,
+            "camera": 8,
+            "nnfloor": 2,
+            "xpos": 22621,
+            "ypos": -3600,
+            "zpos": 16807,
+            "ydir": 1024
+        },
+        {
+            "from": "Press Entrance",
+            "stage": 1,
+            "room": 7,
+            "camera": 7,
+            "nnfloor": 2,
+            "xpos": 6830,
+            "ypos": -3600,
+            "zpos": 16840,
+            "ydir": 1024
+        },
+        {
+            "from": "Press Entrance 2",
+            "stage": 1,
+            "room": 7,
+            "camera": 7,
+            "nnfloor": 2,
+            "xpos": 6830,
+            "ypos": -3600,
+            "zpos": 16840,
+            "ydir": 1024
+        }
+    ],
+    "Shopping Save": [
+        {
+            "from": "Shopping Alley",
+            "stage": 1,
+            "room": 22,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -23561,
+            "ypos": 0,
+            "zpos": -26363,
+            "ydir": 3176
+        }
+    ],
+    "Press Offices": [
+        {
+            "from": "Press Street",
+            "stage": 1,
+            "room": 15,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -6803,
+            "ypos": 0,
+            "zpos": -25508,
+            "ydir": 3072
+        },
+        {
+            "from": "Press Entrance",
+            "stage": 1,
+            "room": 15,
+            "camera": 0,
+            "nnfloor": 8,
+            "xpos": -25815,
+            "ypos": -14400,
+            "zpos": -15530,
+            "ydir": 0
+        },
+        {
+            "from": "Press Entrance 2",
+            "stage": 1,
+            "room": 15,
+            "camera": 0,
+            "nnfloor": 8,
+            "xpos": -25815,
+            "ypos": -14400,
+            "zpos": -15530,
+            "ydir": 0
+        }
+    ],
+    "Press Entrance": [
+        {
+            "from": "Press Street",
+            "stage": 1,
+            "room": 16,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -13406,
+            "ypos": 0,
+            "zpos": -24149,
+            "ydir": 3072
+        },
+        {
+            "from": "Press Offices",
+            "stage": 1,
+            "room": 16,
+            "camera": 7,
+            "nnfloor": 8,
+            "xpos": -18325,
+            "ypos": -14400,
+            "zpos": -13979,
+            "ydir": 2320
+        }
+    ],
+    "Municipal Alley": [
+        {
+            "from": "Press Street",
+            "stage": 1,
+            "room": 8,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 20871,
+            "ypos": 0,
+            "zpos": -7631,
+            "ydir": 2048
+        },
+        {
+            "from": "Party Alley",
+            "stage": 1,
+            "room": 8,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -26870,
+            "ypos": 0,
+            "zpos": -21408,
+            "ydir": 3600
+        },
+        {
+            "from": "Stagla Gas Outside",
+            "stage": 1,
+            "room": 8,
+            "camera": 5,
+            "nnfloor": 1,
+            "xpos": -15918,
+            "ypos": -1800,
+            "zpos": 8285,
+            "ydir": 992
+        },
+        {
+            "from": "Stagla Escape",
+            "stage": 1,
+            "room": 8,
+            "camera": 5,
+            "nnfloor": 1,
+            "xpos": -15918,
+            "ypos": -1800,
+            "zpos": 8285,
+            "ydir": 992
+        }
+    ],
+    "Party Alley": [
+        {
+            "from": "Municipal Alley",
+            "stage": 1,
+            "room": 9,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 12743,
+            "ypos": 0,
+            "zpos": -20238,
+            "ydir": 1536
+        },
+        {
+            "from": "Grave Digger Alley",
+            "stage": 1,
+            "room": 9,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -16415,
+            "ypos": 0,
+            "zpos": -6585,
+            "ydir": 0
+        }
+    ],
+    "Stagla Gas Outside": [
+        {
+            "from": "Municipal Alley",
+            "stage": 1,
+            "room": 14,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 13587,
+            "ypos": 0,
+            "zpos": -23840,
+            "ydir": 2560
+        },
+        {
+            "from": "Stagla Gas",
+            "stage": 1,
+            "room": 14,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -8193,
+            "ypos": 0,
+            "zpos": -5366,
+            "ydir": 1184
+        }
+    ],
+    "Stagla Escape": [
+        {
+            "from": "Municipal Alley",
+            "stage": 1,
+            "room": 23,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 13587,
+            "ypos": 0,
+            "zpos": -23840,
+            "ydir": 2560
+        },
+        {
+            "from": "Stagla Gas",
+            "stage": 1,
+            "room": 23,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -8193,
+            "ypos": 0,
+            "zpos": -5366,
+            "ydir": 1184
+        }
+    ],
+    "Grave Digger Alley": [
+        {
+            "from": "Party Alley",
+            "stage": 1,
+            "room": 10,
+            "camera": 0,
+            "nnfloor": 4,
+            "xpos": 20640,
+            "ypos": -7200,
+            "zpos": -3700,
+            "ydir": 2048
+        },
+        {
+            "from": "Train Station",
+            "stage": 1,
+            "room": 10,
+            "camera": 5,
+            "nnfloor": 4,
+            "xpos": -20643,
+            "ypos": -7200,
+            "zpos": -18647,
+            "ydir": 0
+        },
+        {
+            "from": "Train Station",
+            "stage": 1,
+            "room": 10,
+            "camera": 9,
+            "nnfloor": 0,
+            "xpos": -25027,
+            "ypos": 0,
+            "zpos": -19634,
+            "ydir": 3609
+        }
+    ],
+    "Train Station": [
+        {
+            "from": "Grave Digger Alley",
+            "stage": 1,
+            "room": 11,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -11030,
+            "ypos": 0,
+            "zpos": -16190,
+            "ydir": 6144
+        },
+        {
+            "from": "Grave Digger Alley",
+            "stage": 1,
+            "room": 11,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -13605,
+            "ypos": 0,
+            "zpos": -16005,
+            "ydir": 3072
+        },
+        {
+            "from": "Cable Car",
+            "stage": 1,
+            "room": 11,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -3488,
+            "ypos": 0,
+            "zpos": 7489,
+            "ydir": 1024
+        },
+        {
+            "from": "Cable Car",
+            "stage": 1,
+            "room": 11,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": 15932,
+            "ypos": 0,
+            "zpos": 6925,
+            "ydir": 1536
+        }
+    ],
+    "Cable Car": [
+        {
+            "from": "Train Station",
+            "stage": 1,
+            "room": 12,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -22098,
+            "ypos": 0,
+            "zpos": -25752,
+            "ydir": 3072
+        },
+        {
+            "from": "Train Station",
+            "stage": 1,
+            "room": 12,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": 827,
+            "ypos": 0,
+            "zpos": -25685,
+            "ydir": 3072
+        },
+        {
+            "from": "Cable Car",
+            "stage": 1,
+            "room": 12,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -10199,
+            "ypos": 0,
+            "zpos": -23813,
+            "ydir": 4136
+        },
+        {
+            "from": "Cable Car",
+            "stage": 1,
+            "room": 12,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -13134,
+            "ypos": 0,
+            "zpos": -23821,
+            "ydir": 2128
+        }
+    ],
+    "Cable Car Moving": [
+        {
+            "from": "Cable Car",
+            "stage": 1,
+            "room": 21,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -10199,
+            "ypos": 0,
+            "zpos": -23813,
+            "ydir": 4136
+        },
+        {
+            "from": "Cable Car Moving",
+            "stage": 1,
+            "room": 21,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -10199,
+            "ypos": 0,
+            "zpos": -23813,
+            "ydir": 4136
+        },
+        {
+            "from": "Cable Car Moving",
+            "stage": 1,
+            "room": 21,
+            "camera": 25,
+            "nnfloor": 0,
+            "xpos": -13134,
+            "ypos": 0,
+            "zpos": -23821,
+            "ydir": 2128
+        }
+    ],
+    "Stagla Gas": [
+        {
+            "from": "Stagla Gas Outside",
+            "stage": 1,
+            "room": 13,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -24241,
+            "ypos": 0,
+            "zpos": -25872,
+            "ydir": 3232
+        }
+    ],
+    "Press Entrance 2": [
+        {
+            "from": "Press Offices",
+            "stage": 1,
+            "room": 25,
+            "camera": 7,
+            "nnfloor": 8,
+            "xpos": -18325,
+            "ypos": -14400,
+            "zpos": -13979,
+            "ydir": 2320
+        },
+        {
+            "from": "Press Offices",
+            "stage": 1,
+            "room": 25,
+            "camera": 7,
+            "nnfloor": 8,
+            "xpos": -18325,
+            "ypos": -14400,
+            "zpos": -13979,
+            "ydir": 2320
+        }
+    ],
+    "Restaurant Basement": [
+        {
+            "from": "Restaurant",
+            "stage": 1,
+            "room": 18,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17940,
+            "ypos": 0,
+            "zpos": -18953,
+            "ydir": 1040
+        },
+        {
+            "from": "Restaurant",
+            "stage": 1,
+            "room": 18,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17940,
+            "ypos": 0,
+            "zpos": -18953,
+            "ydir": 1040
+        }
+    ],
+    "Power Station Front": [
+        {
+            "from": "Power Station Access",
+            "stage": 1,
+            "room": 4,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -17901,
+            "ypos": 0,
+            "zpos": -10205,
+            "ydir": 7131
+        },
+        {
+            "from": "Power Station",
+            "stage": 1,
+            "room": 4,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -3446,
+            "ypos": 0,
+            "zpos": -10186,
+            "ydir": 7224
+        }
+    ],
+    "ClockTower Bedroom": [
+        {
+            "from": "Cable Car Moving",
+            "stage": 2,
+            "room": 5,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -2208,
+            "ypos": 0,
+            "zpos": -16631,
+            "ydir": 6529
+        },
+        {
+            "from": "ClockTower Chess Room",
+            "stage": 2,
+            "room": 5,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -11536,
+            "ypos": 0,
+            "zpos": 3270,
+            "ydir": 1024
+        }
+    ],
+    "ClockTower Outdoor": [
+        {
+            "from": "Cable Car Moving",
+            "stage": 2,
+            "room": 3,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 2861,
+            "ypos": 0,
+            "zpos": -18365,
+            "ydir": 6689
+        },
+        {
+            "from": "ClockTower Piano Room",
+            "stage": 2,
+            "room": 3,
+            "camera": 9,
+            "nnfloor": 0,
+            "xpos": -15662,
+            "ypos": 0,
+            "zpos": 6716,
+            "ydir": 0
+        },
+        {
+            "from": "ClockTower Hall 1F",
+            "stage": 2,
+            "room": 3,
+            "camera": 13,
+            "nnfloor": 0,
+            "xpos": -2840,
+            "ypos": 0,
+            "zpos": 7869,
+            "ydir": 1024
+        }
+    ],
+    "ClockTower Piano Room": [
+        {
+            "from": "ClockTower Chapel",
+            "stage": 2,
+            "room": 1,
+            "camera": 10,
+            "nnfloor": 0,
+            "xpos": -8020,
+            "ypos": 0,
+            "zpos": -26317,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Chapel",
+            "stage": 2,
+            "room": 1,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -8020,
+            "ypos": 0,
+            "zpos": -26317,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Dining Room",
+            "stage": 2,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -8072,
+            "ypos": 0,
+            "zpos": -11257,
+            "ydir": 5128
+        },
+        {
+            "from": "ClockTower Outdoor",
+            "stage": 2,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -2666,
+            "ypos": 0,
+            "zpos": -14074,
+            "ydir": 1840
+        }
+    ],
+    "ClockTower Piano&Dining": [
+        {
+            "from": "ClockTower Chapel",
+            "stage": 2,
+            "room": 15,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -8020,
+            "ypos": 0,
+            "zpos": -26317,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Chapel",
+            "stage": 2,
+            "room": 15,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -8020,
+            "ypos": 0,
+            "zpos": -26317,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Hall 1F 2",
+            "stage": 2,
+            "room": 15,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -2814,
+            "ypos": 0,
+            "zpos": -1385,
+            "ydir": 2048
+        },
+        {
+            "from": "ClockTower Piano&Dining",
+            "stage": 2,
+            "room": 15,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -8081,
+            "ypos": 0,
+            "zpos": -11391,
+            "ydir": 5128
+        },
+        {
+            "from": "ClockTower Piano&Dining",
+            "stage": 2,
+            "room": 15,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -8153,
+            "ypos": 0,
+            "zpos": -9461,
+            "ydir": 3128
+        }
+    ],
+    "ClockTower Chapel": [
+        {
+            "from": "ClockTower Piano Room",
+            "stage": 2,
+            "room": 0,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -10896,
+            "ypos": 0,
+            "zpos": -4895,
+            "ydir": 1024
+        },
+        {
+            "from": "ClockTower Piano&Dining",
+            "stage": 2,
+            "room": 0,
+            "camera": 9,
+            "nnfloor": 0,
+            "xpos": -10896,
+            "ypos": 0,
+            "zpos": -4895,
+            "ydir": 1024
+        },
+        {
+            "from": "ClockTower Piano&Dining",
+            "stage": 2,
+            "room": 0,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -10896,
+            "ypos": 0,
+            "zpos": -4895,
+            "ydir": 1024
+        },
+        {
+            "from": "ClockTower Chapel 2",
+            "stage": 2,
+            "room": 0,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -11290,
+            "ypos": 0,
+            "zpos": -13920,
+            "ydir": 0
+        }
+    ],
+    "ClockTower Dining Room": [
+        {
+            "from": "ClockTower Piano Room",
+            "stage": 2,
+            "room": 2,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -8052,
+            "ypos": 0,
+            "zpos": -9682,
+            "ydir": 3048
+        },
+        {
+            "from": "ClockTower Hall 1F",
+            "stage": 2,
+            "room": 2,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -2467,
+            "ypos": 0,
+            "zpos": -1385,
+            "ydir": 2048
+        }
+    ],
+    "ClockTower Hall 1F": [
+        {
+            "from": "ClockTower Dining Room",
+            "stage": 2,
+            "room": 4,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -17191,
+            "ypos": 0,
+            "zpos": -10178,
+            "ydir": 4160
+        },
+        {
+            "from": "ClockTower Outdoor",
+            "stage": 2,
+            "room": 4,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -4070,
+            "ypos": 0,
+            "zpos": -17360,
+            "ydir": 3120
+        },
+        {
+            "from": "ClockTower Library",
+            "stage": 2,
+            "room": 4,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": 8673,
+            "ypos": 0,
+            "zpos": -9316,
+            "ydir": 6057
+        }
+    ],
+    "ClockTower Library": [
+        {
+            "from": "ClockTower Hall 1F",
+            "stage": 2,
+            "room": 7,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -23442,
+            "ypos": 0,
+            "zpos": -8990,
+            "ydir": 0
+        },
+        {
+            "from": "ClockTower Chess Room",
+            "stage": 2,
+            "room": 7,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -22415,
+            "ypos": 0,
+            "zpos": -24482,
+            "ydir": 3072
+        },
+        {
+            "from": "Chronos Corridor",
+            "stage": 2,
+            "room": 7,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -16559,
+            "ypos": 0,
+            "zpos": -7709,
+            "ydir": 1024
+        },
+        {
+            "from": "ClockTower Hall 1F 2",
+            "stage": 2,
+            "room": 7,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -23442,
+            "ypos": 0,
+            "zpos": -8990,
+            "ydir": 0
+        }
+    ],
+    "ClockTower Chess Room": [
+        {
+            "from": "ClockTower Bedroom",
+            "stage": 2,
+            "room": 6,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -22541,
+            "ypos": 0,
+            "zpos": -26564,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Library",
+            "stage": 2,
+            "room": 6,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -25199,
+            "ypos": 0,
+            "zpos": -19026,
+            "ydir": 1001
+        }
+    ],
+    "ClockTower Hall 1F 2": [
+        {
+            "from": "ClockTower Library",
+            "stage": 2,
+            "room": 14,
+            "camera": 15,
+            "nnfloor": 0,
+            "xpos": 8673,
+            "ypos": 0,
+            "zpos": -9316,
+            "ydir": 6057
+        },
+        {
+            "from": "ClockTower Piano&Dining",
+            "stage": 2,
+            "room": 14,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -16760,
+            "ypos": 0,
+            "zpos": -10178,
+            "ydir": 4160
+        },
+        {
+            "from": "ClockTower Piano&Dining",
+            "stage": 2,
+            "room": 14,
+            "camera": 16,
+            "nnfloor": 0,
+            "xpos": -16760,
+            "ypos": 0,
+            "zpos": -10178,
+            "ydir": 4160
+        }
+    ],
+    "Chronos Corridor": [
+        {
+            "from": "ClockTower Library",
+            "stage": 2,
+            "room": 8,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17930,
+            "ypos": 0,
+            "zpos": -25748,
+            "ydir": 3017
+        },
+        {
+            "from": "Chronos Room",
+            "stage": 2,
+            "room": 8,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -25724,
+            "ypos": 0,
+            "zpos": -5789,
+            "ydir": 177
+        }
+    ],
+    "Chronos Room": [
+        {
+            "from": "Chronos Corridor",
+            "stage": 2,
+            "room": 9,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -11758,
+            "ypos": 0,
+            "zpos": -24445,
+            "ydir": 2048
+        },
+        {
+            "from": "Hospital Street",
+            "stage": 2,
+            "room": 9,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -28040,
+            "ypos": 0,
+            "zpos": -22548,
+            "ydir": 77
+        }
+    ],
+    "Hospital Street": [
+        {
+            "from": "Chronos Room",
+            "stage": 3,
+            "room": 0,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 1331,
+            "ypos": 0,
+            "zpos": -23080,
+            "ydir": 2480
+        },
+        {
+            "from": "Office Save",
+            "stage": 3,
+            "room": 0,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": 5462,
+            "ypos": 0,
+            "zpos": -7940,
+            "ydir": 929
+        },
+        {
+            "from": "Park Entrance",
+            "stage": 3,
+            "room": 0,
+            "camera": 8,
+            "nnfloor": 3,
+            "xpos": 18553,
+            "ypos": -5400,
+            "zpos": 3029,
+            "ydir": 952
+        }
+    ],
+    "Tower Outdoor": [
+        {
+            "from": "ClockTower Hall 2F",
+            "stage": 2,
+            "room": 11,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -12485,
+            "ypos": 0,
+            "zpos": 4186,
+            "ydir": 881
+        },
+        {
+            "from": "ClockTower Hall 2F",
+            "stage": 2,
+            "room": 11,
+            "camera": 21,
+            "nnfloor": 0,
+            "xpos": -12485,
+            "ypos": 0,
+            "zpos": 4186,
+            "ydir": 881
+        },
+        {
+            "from": "ClockTower",
+            "stage": 2,
+            "room": 11,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -2760,
+            "ypos": 0,
+            "zpos": 3230,
+            "ydir": 1024
+        }
+    ],
+    "ClockTower Hall 2F": [
+        {
+            "from": "Tower Outdoor",
+            "stage": 2,
+            "room": 10,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -14052,
+            "ypos": 0,
+            "zpos": -17460,
+            "ydir": 3072
+        }
+    ],
+    "ClockTower Nemesis Fight": [
+        {
+            "from": "Tower Outdoor",
+            "stage": 2,
+            "room": 13,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 0,
+            "ypos": 0,
+            "zpos": 0,
+            "ydir": 0
+        }
+    ],
+    "ClockTower": [
+        {
+            "from": "Tower Outdoor",
+            "stage": 2,
+            "room": 12,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18992,
+            "ypos": 0,
+            "zpos": -17249,
+            "ydir": 3072
+        }
+    ],
+    "ClockTower Piano Room 2": [
+        {
+            "from": "ClockTower Chapel 2",
+            "stage": 2,
+            "room": 23,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -8020,
+            "ypos": 0,
+            "zpos": -26317,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Chapel 2",
+            "stage": 2,
+            "room": 23,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -8020,
+            "ypos": 0,
+            "zpos": -26317,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Hall 1F 3",
+            "stage": 2,
+            "room": 23,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -2365,
+            "ypos": 0,
+            "zpos": -1161,
+            "ydir": 2048
+        },
+        {
+            "from": "ClockTower Piano Room 2",
+            "stage": 2,
+            "room": 23,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -8081,
+            "ypos": 0,
+            "zpos": -11391,
+            "ydir": 5128
+        },
+        {
+            "from": "ClockTower Piano Room 2",
+            "stage": 2,
+            "room": 23,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -8153,
+            "ypos": 0,
+            "zpos": -9461,
+            "ydir": 3128
+        }
+    ],
+    "ClockTower Chess Room 2": [
+        {
+            "from": "ClockTower Bedroom 2",
+            "stage": 2,
+            "room": 18,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -22541,
+            "ypos": 0,
+            "zpos": -26564,
+            "ydir": 3072
+        },
+        {
+            "from": "ClockTower Library 2",
+            "stage": 2,
+            "room": 18,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -25199,
+            "ypos": 0,
+            "zpos": -19026,
+            "ydir": 1001
+        }
+    ],
+    "ClockTower Bedroom 2": [
+        {
+            "from": "ClockTower Chess Room 2",
+            "stage": 2,
+            "room": 17,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -11536,
+            "ypos": 0,
+            "zpos": 3270,
+            "ydir": 1024
+        }
+    ],
+    "ClockTower Library 2": [
+        {
+            "from": "ClockTower Chess Room 2",
+            "stage": 2,
+            "room": 19,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -22415,
+            "ypos": 0,
+            "zpos": -24482,
+            "ydir": 3072
+        },
+        {
+            "from": "Chronos Corridor 2",
+            "stage": 2,
+            "room": 19,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -16559,
+            "ypos": 0,
+            "zpos": -7709,
+            "ydir": 1024
+        },
+        {
+            "from": "ClockTower Hall 1F 3",
+            "stage": 2,
+            "room": 19,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -23442,
+            "ypos": 0,
+            "zpos": -8990,
+            "ydir": 0
+        }
+    ],
+    "ClockTower Hall 1F 3": [
+        {
+            "from": "ClockTower Library 2",
+            "stage": 2,
+            "room": 22,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": 8673,
+            "ypos": 0,
+            "zpos": -9316,
+            "ydir": 6057
+        },
+        {
+            "from": "ClockTower Library 2",
+            "stage": 2,
+            "room": 22,
+            "camera": 15,
+            "nnfloor": 0,
+            "xpos": 8673,
+            "ypos": 0,
+            "zpos": -9316,
+            "ydir": 6057
+        },
+        {
+            "from": "ClockTower Piano Room 2",
+            "stage": 2,
+            "room": 22,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -17191,
+            "ypos": 0,
+            "zpos": -10178,
+            "ydir": 4160
+        },
+        {
+            "from": "ClockTower Piano Room 2",
+            "stage": 2,
+            "room": 22,
+            "camera": 16,
+            "nnfloor": 0,
+            "xpos": -17191,
+            "ypos": 0,
+            "zpos": -10178,
+            "ydir": 4160
+        }
+    ],
+    "Chronos Corridor 2": [
+        {
+            "from": "ClockTower Library 2",
+            "stage": 2,
+            "room": 20,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17930,
+            "ypos": 0,
+            "zpos": -25748,
+            "ydir": 3017
+        },
+        {
+            "from": "Chronos Room 2",
+            "stage": 2,
+            "room": 20,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -25724,
+            "ypos": 0,
+            "zpos": -5789,
+            "ydir": 177
+        }
+    ],
+    "Chronos Room 2": [
+        {
+            "from": "Chronos Corridor 2",
+            "stage": 2,
+            "room": 21,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -11758,
+            "ypos": 0,
+            "zpos": -24445,
+            "ydir": 2048
+        },
+        {
+            "from": "Hospital Street 2",
+            "stage": 2,
+            "room": 21,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -28153,
+            "ypos": 0,
+            "zpos": -22611,
+            "ydir": 77
+        }
+    ],
+    "Hospital Street 2": [
+        {
+            "from": "Chronos Room 2",
+            "stage": 3,
+            "room": 23,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 1331,
+            "ypos": 0,
+            "zpos": -23080,
+            "ydir": 2480
+        },
+        {
+            "from": "Hospital Hall",
+            "stage": 3,
+            "room": 23,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -26128,
+            "ypos": 0,
+            "zpos": 9153,
+            "ydir": 4064
+        }
+    ],
+    "ClockTower Chapel 2": [
+        {
+            "from": "ClockTower Piano Room 2",
+            "stage": 2,
+            "room": 16,
+            "camera": 9,
+            "nnfloor": 0,
+            "xpos": -10896,
+            "ypos": 0,
+            "zpos": -4895,
+            "ydir": 1024
+        },
+        {
+            "from": "ClockTower Piano Room 2",
+            "stage": 2,
+            "room": 16,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -10896,
+            "ypos": 0,
+            "zpos": -4895,
+            "ydir": 1024
+        }
+    ],
+    "Office Save": [
+        {
+            "from": "Hospital Street",
+            "stage": 3,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -25437,
+            "ypos": 0,
+            "zpos": -26156,
+            "ydir": 3217
+        },
+        {
+            "from": "Hospital Street 2",
+            "stage": 3,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -25437,
+            "ypos": 0,
+            "zpos": -26156,
+            "ydir": 3217
+        }
+    ],
+    "Hospital Hall": [
+        {
+            "from": "Hospital Street",
+            "stage": 3,
+            "room": 2,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 765,
+            "ypos": 0,
+            "zpos": -18570,
+            "ydir": 2068
+        },
+        {
+            "from": "Reception",
+            "stage": 3,
+            "room": 2,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -5392,
+            "ypos": 0,
+            "zpos": -13042,
+            "ydir": -7232
+        },
+        {
+            "from": "Hospital Street 2",
+            "stage": 3,
+            "room": 2,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 1359,
+            "ypos": 0,
+            "zpos": -18383,
+            "ydir": 2068
+        }
+    ],
+    "Park Entrance": [
+        {
+            "from": "Hospital Street",
+            "stage": 3,
+            "room": 12,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -7302,
+            "ypos": 0,
+            "zpos": -20773,
+            "ydir": 3140
+        },
+        {
+            "from": "Fountain Room",
+            "stage": 3,
+            "room": 12,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -19044,
+            "ypos": 0,
+            "zpos": -2818,
+            "ydir": 4004
+        },
+        {
+            "from": "Hospital Street 2",
+            "stage": 3,
+            "room": 12,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -7302,
+            "ypos": 0,
+            "zpos": -20773,
+            "ydir": 3140
+        }
+    ],
+    "Reception": [
+        {
+            "from": "Hospital Hall",
+            "stage": 3,
+            "room": 3,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18706,
+            "ypos": 0,
+            "zpos": -26120,
+            "ydir": 2992
+        },
+        {
+            "from": "Staff Room",
+            "stage": 3,
+            "room": 3,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -26670,
+            "ypos": 0,
+            "zpos": -22428,
+            "ydir": 0
+        }
+    ],
+    "Staff Room": [
+        {
+            "from": "Reception",
+            "stage": 3,
+            "room": 4,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -15949,
+            "ypos": 0,
+            "zpos": -26886,
+            "ydir": 6208
+        },
+        {
+            "from": "4F Corridor",
+            "stage": 3,
+            "room": 4,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -12986,
+            "ypos": 0,
+            "zpos": -18274,
+            "ydir": 2040
+        },
+        {
+            "from": "B3 Corridor",
+            "stage": 3,
+            "room": 4,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -12986,
+            "ypos": 0,
+            "zpos": -18274,
+            "ydir": 2040
+        }
+    ],
+    "4F Corridor": [
+        {
+            "from": "Staff Room",
+            "stage": 3,
+            "room": 5,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -13967,
+            "ypos": 0,
+            "zpos": 1287,
+            "ydir": 2048
+        },
+        {
+            "from": "Room 402",
+            "stage": 3,
+            "room": 5,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -4409,
+            "ypos": 0,
+            "zpos": -5707,
+            "ydir": -1472
+        },
+        {
+            "from": "Room 401",
+            "stage": 3,
+            "room": 5,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -13068,
+            "ypos": 0,
+            "zpos": -5707,
+            "ydir": 3096
+        },
+        {
+            "from": "Data Room",
+            "stage": 3,
+            "room": 5,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -19025,
+            "ypos": 0,
+            "zpos": -16009,
+            "ydir": 4096
+        },
+        {
+            "from": "B3 Corridor",
+            "stage": 3,
+            "room": 5,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -13967,
+            "ypos": 0,
+            "zpos": 1287,
+            "ydir": 2048
+        }
+    ],
+    "B3 Corridor": [
+        {
+            "from": "Staff Room",
+            "stage": 3,
+            "room": 9,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -9391,
+            "ypos": 0,
+            "zpos": 2369,
+            "ydir": 2048
+        },
+        {
+            "from": "4F Corridor",
+            "stage": 3,
+            "room": 9,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -9391,
+            "ypos": 0,
+            "zpos": 2369,
+            "ydir": 2080
+        },
+        {
+            "from": "Laboratory",
+            "stage": 3,
+            "room": 9,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -17635,
+            "ypos": 0,
+            "zpos": -18139,
+            "ydir": 2048
+        }
+    ],
+    "Room 402": [
+        {
+            "from": "4F Corridor",
+            "stage": 3,
+            "room": 6,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -23337,
+            "ypos": 0,
+            "zpos": -18787,
+            "ydir": 1064
+        }
+    ],
+    "Room 401": [
+        {
+            "from": "4F Corridor",
+            "stage": 3,
+            "room": 7,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -24046,
+            "ypos": 0,
+            "zpos": -19086,
+            "ydir": 968
+        }
+    ],
+    "Data Room": [
+        {
+            "from": "4F Corridor",
+            "stage": 3,
+            "room": 8,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -8040,
+            "ypos": 0,
+            "zpos": -21223,
+            "ydir": 2024
+        }
+    ],
+    "Laboratory": [
+        {
+            "from": "B3 Corridor",
+            "stage": 3,
+            "room": 10,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -19206,
+            "ypos": 0,
+            "zpos": -17988,
+            "ydir": 0
+        },
+        {
+            "from": "Synthesis Room",
+            "stage": 3,
+            "room": 10,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -8173,
+            "ypos": 0,
+            "zpos": -10263,
+            "ydir": 1024
+        },
+        {
+            "from": "Synthesis Room",
+            "stage": 3,
+            "room": 10,
+            "camera": 11,
+            "nnfloor": 0,
+            "xpos": -8173,
+            "ypos": 0,
+            "zpos": -10263,
+            "ydir": 1024
+        }
+    ],
+    "Synthesis Room": [
+        {
+            "from": "Laboratory",
+            "stage": 3,
+            "room": 11,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -22204,
+            "ypos": 0,
+            "zpos": -28255,
+            "ydir": 3072
+        },
+        {
+            "from": "Laboratory",
+            "stage": 3,
+            "room": 11,
+            "camera": 11,
+            "nnfloor": 0,
+            "xpos": -22204,
+            "ypos": 0,
+            "zpos": -28255,
+            "ydir": 3072
+        },
+        {
+            "from": "Laboratory",
+            "stage": 3,
+            "room": 11,
+            "camera": 16,
+            "nnfloor": 0,
+            "xpos": -22204,
+            "ypos": 0,
+            "zpos": -28255,
+            "ydir": 3072
+        }
+    ],
+    "Fountain Room": [
+        {
+            "from": "Park Entrance",
+            "stage": 3,
+            "room": 13,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": -4252,
+            "ypos": -1800,
+            "zpos": -3123,
+            "ydir": 2096
+        },
+        {
+            "from": "Fountain Tunnel",
+            "stage": 3,
+            "room": 13,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -16443,
+            "ypos": 0,
+            "zpos": 3500,
+            "ydir": 948
+        }
+    ],
+    "Fountain Tunnel": [
+        {
+            "from": "Fountain Room",
+            "stage": 3,
+            "room": 16,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18705,
+            "ypos": 0,
+            "zpos": -19130,
+            "ydir": 3376
+        },
+        {
+            "from": "Graveyard",
+            "stage": 3,
+            "room": 16,
+            "camera": 6,
+            "nnfloor": 1,
+            "xpos": -874,
+            "ypos": -1800,
+            "zpos": 4722,
+            "ydir": 3072
+        },
+        {
+            "from": "Grave Digger Pit",
+            "stage": 3,
+            "room": 16,
+            "camera": 6,
+            "nnfloor": 1,
+            "xpos": -874,
+            "ypos": -1800,
+            "zpos": 4722,
+            "ydir": 3072
+        }
+    ],
+    "Factory Approach": [
+        {
+            "from": "Lake Passageway",
+            "stage": 3,
+            "room": 15,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18853,
+            "ypos": 0,
+            "zpos": -1399,
+            "ydir": 3072
+        },
+        {
+            "from": "Factory Access",
+            "stage": 3,
+            "room": 15,
+            "camera": 9,
+            "nnfloor": 0,
+            "xpos": 23367,
+            "ypos": 0,
+            "zpos": 9653,
+            "ydir": 2048
+        }
+    ],
+    "Lake Passageway": [
+        {
+            "from": "Factory Approach",
+            "stage": 3,
+            "room": 14,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": 450,
+            "ypos": 0,
+            "zpos": -6015,
+            "ydir": 1024
+        }
+    ],
+    "Factory Access": [
+        {
+            "from": "Factory Approach",
+            "stage": 4,
+            "room": 16,
+            "camera": 0,
+            "nnfloor": 10,
+            "xpos": -26443,
+            "ypos": -18000,
+            "zpos": -12801,
+            "ydir": 4096
+        },
+        {
+            "from": "Factory 1F",
+            "stage": 4,
+            "room": 16,
+            "camera": 6,
+            "nnfloor": 12,
+            "xpos": 17218,
+            "ypos": -21600,
+            "zpos": -8550,
+            "ydir": 2112
+        }
+    ],
+    "Grave Digger Pit": [
+        {
+            "from": "Fountain Tunnel",
+            "stage": 3,
+            "room": 21,
+            "camera": 7,
+            "nnfloor": 0,
+            "xpos": -18666,
+            "ypos": 0,
+            "zpos": -4699,
+            "ydir": 1069
+        },
+        {
+            "from": "Graveyard Cabin",
+            "stage": 3,
+            "room": 21,
+            "camera": 12,
+            "nnfloor": 0,
+            "xpos": 8049,
+            "ypos": 0,
+            "zpos": -653,
+            "ydir": 1024
+        }
+    ],
+    "Graveyard": [
+        {
+            "from": "Fountain Tunnel",
+            "stage": 3,
+            "room": 17,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -20939,
+            "ypos": 0,
+            "zpos": -6073,
+            "ydir": 1088
+        },
+        {
+            "from": "Graveyard Cabin",
+            "stage": 3,
+            "room": 17,
+            "camera": 6,
+            "nnfloor": 0,
+            "xpos": -894,
+            "ypos": 0,
+            "zpos": 295,
+            "ydir": 1024
+        }
+    ],
+    "Graveyard Cabin": [
+        {
+            "from": "Graveyard",
+            "stage": 3,
+            "room": 18,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -15226,
+            "ypos": 0,
+            "zpos": -15659,
+            "ydir": 3085
+        },
+        {
+            "from": "Graveyard Save",
+            "stage": 3,
+            "room": 18,
+            "camera": 2,
+            "nnfloor": 0,
+            "xpos": -4111,
+            "ypos": 0,
+            "zpos": -7137,
+            "ydir": 2048
+        },
+        {
+            "from": "Graveyard Secret",
+            "stage": 3,
+            "room": 18,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": -15677,
+            "ypos": 0,
+            "zpos": -8978,
+            "ydir": 0
+        },
+        {
+            "from": "Grave Digger Pit",
+            "stage": 3,
+            "room": 18,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -15216,
+            "ypos": 0,
+            "zpos": -15061,
+            "ydir": 3085
+        }
+    ],
+    "Graveyard Save": [
+        {
+            "from": "Graveyard Cabin",
+            "stage": 3,
+            "room": 19,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -27484,
+            "ypos": 0,
+            "zpos": -24406,
+            "ydir": 0
+        }
+    ],
+    "Graveyard Secret": [
+        {
+            "from": "Graveyard Cabin",
+            "stage": 3,
+            "room": 20,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -19292,
+            "ypos": 0,
+            "zpos": -9006,
+            "ydir": 2048
+        },
+        {
+            "from": "Graveyard Cabin",
+            "stage": 3,
+            "room": 20,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -19292,
+            "ypos": 0,
+            "zpos": -9006,
+            "ydir": 2048
+        }
+    ],
+    "Factory Save 1F": [
+        {
+            "from": "Factory 1F",
+            "stage": 4,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18475,
+            "ypos": 0,
+            "zpos": -28191,
+            "ydir": 3093
+        },
+        {
+            "from": "Boiler Room",
+            "stage": 4,
+            "room": 1,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17018,
+            "ypos": 0,
+            "zpos": -20389,
+            "ydir": 2048
+        }
+    ],
+    "Treatment Control": [
+        {
+            "from": "Factory 1F",
+            "stage": 4,
+            "room": 3,
+            "camera": 0,
+            "nnfloor": 10,
+            "xpos": -27638,
+            "ypos": -18000,
+            "zpos": -760,
+            "ydir": 976
+        },
+        {
+            "from": "Treatment Control",
+            "stage": 4,
+            "room": 3,
+            "camera": 6,
+            "nnfloor": 2,
+            "xpos": -11905,
+            "ypos": -3600,
+            "zpos": 1324,
+            "ydir": 3072
+        },
+        {
+            "from": "Treatment Control",
+            "stage": 4,
+            "room": 3,
+            "camera": 3,
+            "nnfloor": 10,
+            "xpos": -11144,
+            "ypos": -18000,
+            "zpos": -658,
+            "ydir": 1024
+        },
+        {
+            "from": "Toxic Pool Room",
+            "stage": 4,
+            "room": 3,
+            "camera": 6,
+            "nnfloor": 2,
+            "xpos": -11836,
+            "ypos": -3600,
+            "zpos": 1324,
+            "ydir": 3072
+        },
+        {
+            "from": "Disposal Access",
+            "stage": 4,
+            "room": 3,
+            "camera": 4,
+            "nnfloor": 10,
+            "xpos": -5951,
+            "ypos": -18000,
+            "zpos": 2527,
+            "ydir": 2048
+        }
+    ],
+    "Communications Room": [
+        {
+            "from": "Factory 1F",
+            "stage": 4,
+            "room": 10,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 19566,
+            "ypos": 0,
+            "zpos": 24521,
+            "ydir": 1047
+        },
+        {
+            "from": "Hatch Escape Path",
+            "stage": 4,
+            "room": 10,
+            "camera": 11,
+            "nnfloor": 0,
+            "xpos": 19696,
+            "ypos": 0,
+            "zpos": 16406,
+            "ydir": 1103
+        },
+        {
+            "from": "Hatch Escape Path",
+            "stage": 4,
+            "room": 10,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": 19696,
+            "ypos": 0,
+            "zpos": 16406,
+            "ydir": 1103
+        }
+    ],
+    "Factory 1F": [
+        {
+            "from": "Factory Save 1F",
+            "stage": 4,
+            "room": 0,
+            "camera": 5,
+            "nnfloor": 0,
+            "xpos": 2080,
+            "ypos": 0,
+            "zpos": 9775,
+            "ydir": 1024
+        },
+        {
+            "from": "Treatment Control",
+            "stage": 4,
+            "room": 0,
+            "camera": 4,
+            "nnfloor": 0,
+            "xpos": -4210,
+            "ypos": 0,
+            "zpos": 7492,
+            "ydir": 3072
+        },
+        {
+            "from": "Communications Room",
+            "stage": 4,
+            "room": 0,
+            "camera": 8,
+            "nnfloor": 1,
+            "xpos": -7685,
+            "ypos": -1800,
+            "zpos": -19362,
+            "ydir": 3032
+        },
+        {
+            "from": "Factory Access",
+            "stage": 4,
+            "room": 0,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -19154,
+            "ypos": 0,
+            "zpos": 961,
+            "ydir": 4096
+        }
+    ],
+    "Boiler Room": [
+        {
+            "from": "Factory Save 1F",
+            "stage": 4,
+            "room": 2,
+            "camera": 0,
+            "nnfloor": 3,
+            "xpos": -22782,
+            "ypos": -5400,
+            "zpos": -8716,
+            "ydir": 0
+        }
+    ],
+    "Disposal Access": [
+        {
+            "from": "Treatment Control",
+            "stage": 4,
+            "room": 8,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -22761,
+            "ypos": 0,
+            "zpos": -19798,
+            "ydir": 4096
+        },
+        {
+            "from": "Disposal Chamber",
+            "stage": 4,
+            "room": 8,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": -3105,
+            "ypos": 0,
+            "zpos": -26760,
+            "ydir": 3072
+        }
+    ],
+    "Toxic Pool Room": [
+        {
+            "from": "Treatment Control",
+            "stage": 4,
+            "room": 7,
+            "camera": 4,
+            "nnfloor": 2,
+            "xpos": -11640,
+            "ypos": -3600,
+            "zpos": -921,
+            "ydir": 1024
+        },
+        {
+            "from": "Factory B1",
+            "stage": 4,
+            "room": 7,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -23375,
+            "ypos": 0,
+            "zpos": -9890,
+            "ydir": 2760
+        }
+    ],
+    "Factory B1 Save": [
+        {
+            "from": "Factory B1",
+            "stage": 4,
+            "room": 5,
+            "camera": 1,
+            "nnfloor": 0,
+            "xpos": -27790,
+            "ypos": 0,
+            "zpos": -26735,
+            "ydir": 0
+        },
+        {
+            "from": "Water Puzzle",
+            "stage": 4,
+            "room": 5,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -17040,
+            "ypos": 0,
+            "zpos": -20443,
+            "ydir": 2080
+        }
+    ],
+    "Water Puzzle": [
+        {
+            "from": "Factory B1 Save",
+            "stage": 4,
+            "room": 6,
+            "camera": 0,
+            "nnfloor": 4,
+            "xpos": -28744,
+            "ypos": -7200,
+            "zpos": -23160,
+            "ydir": 4084
+        }
+    ],
+    "Factory B1": [
+        {
+            "from": "Factory B1 Save",
+            "stage": 4,
+            "room": 4,
+            "camera": 0,
+            "nnfloor": 1,
+            "xpos": -7000,
+            "ypos": -1800,
+            "zpos": -24842,
+            "ydir": 2216
+        },
+        {
+            "from": "Toxic Pool Room",
+            "stage": 4,
+            "room": 4,
+            "camera": 6,
+            "nnfloor": 1,
+            "xpos": 4934,
+            "ypos": -1800,
+            "zpos": -11789,
+            "ydir": -11136
+        },
+        {
+            "from": "Factory Access",
+            "stage": 4,
+            "room": 4,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": 0,
+            "ypos": 0,
+            "zpos": 0,
+            "ydir": 0
+        }
+    ],
+    "Disposal Chamber": [
+        {
+            "from": "Disposal Access",
+            "stage": 4,
+            "room": 9,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18746,
+            "ypos": 0,
+            "zpos": -8420,
+            "ydir": 991
+        },
+        {
+            "from": "Disposal Access",
+            "stage": 4,
+            "room": 9,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18746,
+            "ypos": 0,
+            "zpos": -8420,
+            "ydir": 991
+        },
+        {
+            "from": "Disposal Access",
+            "stage": 4,
+            "room": 9,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -18746,
+            "ypos": 0,
+            "zpos": -8420,
+            "ydir": 991
+        }
+    ],
+    "Hatch Escape Path": [
+        {
+            "from": "Communications Room",
+            "stage": 4,
+            "room": 11,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -21657,
+            "ypos": 0,
+            "zpos": -17866,
+            "ydir": 3616
+        },
+        {
+            "from": "Car Cemetary",
+            "stage": 4,
+            "room": 11,
+            "camera": 3,
+            "nnfloor": 0,
+            "xpos": 2565,
+            "ypos": 0,
+            "zpos": -18390,
+            "ydir": 2048
+        }
+    ],
+    "Car Cemetary": [
+        {
+            "from": "Hatch Escape Path",
+            "stage": 4,
+            "room": 12,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -27979,
+            "ypos": 0,
+            "zpos": -16178,
+            "ydir": 4088
+        }
+    ],
+    "Paracelsus Room": [
+        {
+            "from": "Car Cemetary",
+            "stage": 4,
+            "room": 13,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -24480,
+            "ypos": 0,
+            "zpos": -15400,
+            "ydir": 0
+        }
+    ],
+    "Escape Elevator": [
+        {
+            "from": "Paracelsus Room",
+            "stage": 4,
+            "room": 15,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -28003,
+            "ypos": 0,
+            "zpos": -26495,
+            "ydir": 0
+        }
+    ],
+    "Chopper Departure": [
+        {
+            "from": "Escape Elevator",
+            "stage": 4,
+            "room": 14,
+            "camera": 0,
+            "nnfloor": 0,
+            "xpos": -16512,
+            "ypos": 0,
+            "zpos": -26718,
+            "ydir": 5920
+        }
+    ]
+}
