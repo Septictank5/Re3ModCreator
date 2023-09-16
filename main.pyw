@@ -1,70 +1,70 @@
 from uihandler import *
-import os
 import sys
 import shutil
+import os
 from itemmanager import ItemManager
 from doormanager import DoorManager
+from rooms import *
 
 
 class MyApp:
     def __init__(self):
         self.ui = MyWindow()
-        self.rh = RoomHandler()
-        self.managerlist = [ItemManager(self.ui, self.rh), DoorManager(self.ui, self.rh)]
-        self.manager = self.managerlist[0]
-        self.localconnections()
-        self.managerconnections()
         self.startup()
+        self.localConnections()
+        self.managerConnections()
+        self.roomFocusChange(0)
 
-
-    def localconnections(self):
-        self.ui.connectOpenDir(self.choosedirectory)
-        self.ui.connectCreateMod(self.create_mod)
-        self.ui.connectOpenMod(self.open_mod)
-        self.ui.connectRestoreRoomItems(self.restoreroom)
-        self.ui.connectRestoreAllRoomItems(self.restoreallrooms)
-        self.ui.connectRoomChange(self.roomfocuschange)
+    def localConnections(self):
+        self.ui.connectOpenDir(self.chooseDirectory)
+        self.ui.connectCreateMod(self.createMod)
+        self.ui.connectOpenMod(self.openMod)
+        self.ui.connectRestoreRoom(self.restoreRoom)
+        self.ui.connectRestoreAllRooms(self.restoreAllRooms)
+        self.ui.connectRoomChange(self.roomFocusChange)
+        self.ui.connectFocusChange(self.generalFocusChange)
         self.ui.connectSwap(self.swap)
         self.ui.connectVerify(self.verify)
-        self.ui.connectTabChanged(self.changemanager)
+        self.ui.connectTabChanged(self.changeManager)
 
-    def managerconnections(self):
-        self.ui.connectQuantityUpdate(self.managerlist[0].updatequantity)
-        self.ui.connectItemChange(self.managerlist[0].itemfocuschange)
-        self.ui.connectRoomTargetChange(self.managerlist[1].targetfocuschange)
+    def managerConnections(self):
+        self.ui.connectQuantityUpdate(self.managerlist[0].updateQuantity)
 
-    def roomfocuschange(self, row):
-        self.manager.roomfocuschange()
+    def roomFocusChange(self, row):
+        self.manager.roomFocusChange()
+
+    def generalFocusChange(self, row):
+        self.manager.focusChange()
 
     def swap(self):
         self.manager.swap()
 
-    def restoreroom(self):
-        self.manager.restoreroom()
+    def restoreRoom(self):
+        self.manager.restoreRoom()
 
-    def restoreallrooms(self):
-        self.manager.restoreallrooms()
+    def restoreAllRooms(self):
+        self.manager.restoreAllRooms()
 
-    def changemanager(self, value):
+    def changeManager(self, value):
         self.manager = self.managerlist[value]
-        self.manager.roomfocuschange()
+        self.manager.roomFocusChange()
 
-    def choosedirectory(self):
+    def chooseDirectory(self):
         chosenfolder = QFileDialog.getExistingDirectory() + '/'
-        if self.defaultfolder == chosenfolder:
+        if datapy.defaultpath == chosenfolder:
             return
-        self.defaultfolder = chosenfolder
-        if not os.path.exists(self.defaultfolder + 'Mods/'):
-            os.mkdir(self.defaultfolder + 'Mods/')
-        defaultloc = [f'defaultrdtdir={self.defaultfolder}\n']
-        newworkingfolder = self.defaultfolder + 'Mods/' + self.modname + '/'
+        datapy.defaultpath = chosenfolder
+        if not os.path.exists(datapy.defaultpath + 'Mods/'):
+            os.mkdir(datapy.defaultpath + 'Mods/')
+        defaultloc = [f'defaultrdtdir={datapy.defaultpath}\n']
+        newworkingfolder = datapy.defaultpath + 'Mods/' + self.modname + '/'
         if not os.path.exists(newworkingfolder):
             os.mkdir(newworkingfolder)
         defaultloc.append(f'workingdir={newworkingfolder}\n')
         with open('config.ini', 'r+') as file:
             file.writelines(defaultloc)
-        self.copy_files(self.workingfolder, newworkingfolder)
-        self.workingfolder = newworkingfolder
+        self.copyFiles(datapy.workingpath, newworkingfolder)
+        datapy.workingpath = newworkingfolder
 
     def startup(self):
         mode = 'r+' if os.path.exists('config.ini') else 'w+'
@@ -73,61 +73,67 @@ class MyApp:
             sessiondata = file.read()
 
             if 'defaultrdtdir=' not in sessiondata:
-                self.defaultfolder = QFileDialog.getExistingDirectory() + '/'
-                if not os.path.exists(self.defaultfolder + 'Mods/'):
-                    os.mkdir(self.defaultfolder + 'Mods/')
-                file.writelines([f'defaultrdtdir={self.defaultfolder}\n'])
+                datapy.defaultpath = QFileDialog.getExistingDirectory() + '/'
+                if not os.path.exists(datapy.defaultpath + 'Mods/'):
+                    os.mkdir(datapy.defaultpath + 'Mods/')
+                file.writelines([f'defaultrdtdir={datapy.defaultpath}\n'])
 
             else:
                 index = sessiondata.index('defaultrdtdir=') + len('defaultrdtdir=')
                 endex = sessiondata[index:].index('\n')
-                self.defaultfolder = sessiondata[index:index + endex]
+                datapy.defaultpath = sessiondata[index:index + endex]
 
             if 'workingdir=' in sessiondata:
                 index = sessiondata.index('workingdir=') + len('workingdir=')
                 endex = sessiondata[index:].index('\n')
-                self.workingfolder = sessiondata[index:index + endex]
-                self.validate_files()
+                datapy.workingpath = sessiondata[index:index + endex]
+                self.validateFiles()
 
             else:
-                if not self.get_modname():
+                if not self.getModName():
                     sys.exit(0)
-                file.write(f'workingdir={self.workingfolder}\n')
-            self.modname = self.workingfolder.split('/')[-2]
+                file.write(f'workingdir={datapy.workingpath}\n')
+            self.tracker = Tracker()
+            self.rh = RoomHandler(self.tracker)
+            self.managerlist = [ItemManager(self.ui, self.rh), DoorManager(self.ui, self.rh)]
+            self.manager = self.managerlist[0]
+            self.modname = datapy.workingpath.split('/')[-2]
             self.ui.updateModTitle(self.modname)
             self.rh.progressupdate.connect(self.ui.updateProgress)
-            self.rh.update_directorys(self.defaultfolder, self.workingfolder)
-            self.ui.initUI(list(roomnames.values()), itemnames)
+            self.rh.updateDirectorys()
+            self.ui.initUI(list(datapy.roomnames.values()), datapy.itemnames)
 
-    def create_mod(self):
-        if self.get_modname():
-            self.updatemoddetails()
+    def createMod(self):
+        if self.getModName():
+            self.updateModDetails()
 
-    def get_modname(self):
+    def getModName(self):
         modname, ok = QInputDialog.getText(self.ui, 'QInputDialog.getText()', 'Enter Mod Name: ', QLineEdit.Normal)
         if not ok:
             return False
         self.modname = modname
-        self.workingfolder = self.defaultfolder + 'Mods/' + self.modname + '/'
-        if not os.path.exists(self.workingfolder):
-            os.mkdir(self.workingfolder)
-        self.copy_files(self.defaultfolder, self.workingfolder)
+        datapy.workingpath = datapy.defaultpath + 'Mods/' + self.modname + '/'
+        if not os.path.exists(datapy.workingpath):
+            os.mkdir(datapy.workingpath)
+        self.copyFiles(datapy.defaultpath, datapy.workingpath)
+        shutil.copy('jsonfiles/roomdoors.json', datapy.workingpath + 'roomdoors.json')
         return True
 
-    def updatemoddetails(self):
-        self.update_config_workingdir()
-        self.rh.update_directorys(self.defaultfolder, self.workingfolder)
+    def updateModDetails(self):
+        self.updateConfigWorkingDir()
+        self.rh.updateDirectorys()
         self.ui.updateModTitle(self.modname)
         self.ui.reset_rows()
+        self.tracker.setModFile()
 
-    def open_mod(self):
+    def openMod(self):
         folder = QFileDialog.getExistingDirectory() + '/'
         if folder != '/':
-            self.workingfolder = folder
-            self.modname = self.workingfolder.split('/')[-2]
-            self.updatemoddetails()
+            datapy.workingpath = folder
+            self.modname = datapy.workingpath.split('/')[-2]
+            self.updateModDetails()
 
-    def update_config_workingdir(self):
+    def updateConfigWorkingDir(self):
         linenumber = None
         with open('config.ini', 'r+') as file:
             data = file.readlines()
@@ -135,26 +141,28 @@ class MyApp:
             if string.startswith(f'workingdir='):
                 linenumber = index
                 break
-        data[linenumber] = f'workingdir={self.workingfolder}\n'
+        data[linenumber] = f'workingdir={datapy.workingpath}\n'
         with open('config.ini', 'w') as file:
             file.writelines(data)
 
-    def copy_files(self, src, dst):
+    def copyFiles(self, src, dst):
         files = [f for f in os.listdir(src) if os.path.isfile(src + f)
                  and f.endswith('.RDT')]
         for entry in files:
             shutil.copy(src + entry, dst + entry)
 
-    def validate_files(self):
-        if os.path.exists(self.workingfolder):
-            for key in roomnames.keys():
-                filename = self.workingfolder + key + '.RDT'
-                if not os.path.isfile(filename):
-                    shutil.copy(self.defaultfolder + key + '.RDT', filename)
+    def validateFiles(self):
+        if os.path.exists(datapy.workingpath):
+            tocheck = [f for f in os.listdir(datapy.defaultpath) if f.endswith('.RDT')]
+            for file in tocheck:
+                if not os.path.exists(datapy.workingpath + file):
+                    shutil.copy(datapy.defaultpath + file, datapy.workingpath + file)
 
         else:
-            os.mkdir(self.workingfolder)
-            self.copy_files(self.defaultfolder, self.workingfolder)
+            os.mkdir(datapy.workingpath)
+            self.copyFiles(datapy.defaultpath, datapy.workingpath)
+        if not os.path.exists(datapy.workingpath + 'roomdoors.json'):
+            shutil.copy('jsonfiles/roomdoors.json', datapy.workingpath + 'roomdoors.json')
 
     def verify(self):
         completable = False
@@ -165,7 +173,7 @@ class MyApp:
         collected = []
         unhandled = []
         for room in rooms:
-            items = [f.itemname for f in self.rh.get_room_items(room) or []]
+            items = [f.itemname for f in self.rh.getRoomItems(room) or []]
             if items is None:
                 continue
             for item in items:
@@ -182,7 +190,7 @@ class MyApp:
                         optionals.pop(index)
                         break
                 if item in self.keydata.keys():
-                    rooms, unhandled = self.keydatacheck(item, rooms, unhandled)
+                    rooms, unhandled = self.keyDataCheck(item, rooms, unhandled)
                     continue
                 for entry in combokeys.values():
                     if item in entry:
@@ -199,15 +207,15 @@ class MyApp:
                             entry.remove(key)
                             break
                     if key in self.keydata.keys():
-                        rooms, unhandled = self.keydatacheck(key, rooms, unhandled)
+                        rooms, unhandled = self.keyDataCheck(key, rooms, unhandled)
             for key in popitems:
                 combokeys.pop(key)
-            rooms, unhandled = self.manageunhandled(rooms, unhandled)
+            rooms, unhandled = self.manageUnhandled(rooms, unhandled)
         if 'Escape Elevator' in rooms:
             completable = True
         self.ui.verifdialog.display(completable, collected, musthaves, optionals)
 
-    def manageunhandled(self, rooms: list[str], unhandled: list[str]):
+    def manageUnhandled(self, rooms: list[str], unhandled: list[str]):
         popitems = []
         for item in unhandled:
             data = self.keydata[item]
@@ -218,7 +226,7 @@ class MyApp:
             unhandled.remove(item)
         return rooms, unhandled
 
-    def keydatacheck(self, item, rooms: list[str], unhandled: list[str]):
+    def keyDataCheck(self, item, rooms: list[str], unhandled: list[str]):
         data = self.keydata[item]
         if data['access'] in rooms:
             rooms.extend(data['unlocks'])

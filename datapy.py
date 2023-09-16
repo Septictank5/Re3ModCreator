@@ -1,6 +1,5 @@
 import json
 
-
 with open('jsonfiles/rooms.json', 'r') as loadfile:
     roomnames = json.load(loadfile)
 
@@ -185,3 +184,6 @@ roomitemflags = {
     0x2E: [['Factory Save 1F', 'Water Puzzle']],
     0x2F: [['Factory Save 1F', 'Water Puzzle']],
 }
+
+defaultpath = ''
+workingpath = ''

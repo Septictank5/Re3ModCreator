@@ -1,5 +1,5 @@
 from uihandler import *
-from tools import *
+from rooms import *
 
 
 class Manager:
@@ -7,66 +7,55 @@ class Manager:
         self.ui = ui
         self.rh = roomhandler
 
-    def roomfocuschange(self):
+    def roomFocusChange(self):
         pass
 
     def swap(self):
         pass
 
-    def restoreroom(self):
+    def restoreRoom(self):
         pass
 
-    def restoreallrooms(self):
+    def restoreAllRooms(self):
         pass
-
-
 
 
 class ItemManager(Manager):
     def __init__(self, ui: MyWindow, roomhandler: RoomHandler):
         super().__init__(ui, roomhandler)
 
-    def roomfocuschange(self):
+    def roomFocusChange(self):
         self.room = self.ui.get_Room()
-        self.items = self.rh.get_room_items(self.room) or []
+        self.items = self.rh.getRoomItems(self.room) or []
         self.ui.updateRoomItems(self.items)
-        self.itemfocuschange()
+        self.focusChange()
 
-    def itemfocuschange(self):
+    def focusChange(self):
         if self.items:
             self.ritemindex = self.ui.get_RoomItemIndex()
-            self.ui.updateItemDetails(self.items[self.ritemindex])
+            itemdetails = self.rh.getItemData(self.room, self.ritemindex)
+            self.ui.updateItemDetails(itemdetails)
 
-    def updatequantity(self):
+    def updateQuantity(self):
         quantity = self.ui.get_Quantity()
-        self.rh.changeitemquantity(self.room, self.ritemindex, quantity)
+        self.rh.changeItemQuantity(self.room, self.ritemindex, quantity)
 
     def swap(self):
         newitem = self.ui.get_Item()
         quantity = self.ui.get_Quantity()
-        self.rh.swap(self.room, self.ritemindex, newitem, quantity)
-        self.refresh_room_items()
+        self.rh.swapItem(self.room, self.ritemindex, newitem, quantity)
+        self._refreshRoomItems()
 
-    def restoreroom(self):
-        self.rh.restore_room_items(self.room)
-        self.refresh_room_items()
+    def restoreRoom(self):
+        self.rh.restoreRoomItems(self.room)
+        self._refreshRoomItems()
 
-    def restoreallrooms(self):
-        self.rh.restore_all_items()
-        self.refresh_room_items()
+    def restoreAllRooms(self):
+        self.rh.restoreAllItems()
+        self._refreshRoomItems()
 
-    def refresh_room_items(self):
-        self.items = self.rh.get_room_items(self.room)
+    def _refreshRoomItems(self):
+        self.items = self.rh.getRoomItems(self.room) or []
         self.ui.updateRoomItems(self.items)
         self.ui.set_RoomItemRow(0)
-        self.itemfocuschange()
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = MyApp()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
+        self.focusChange()

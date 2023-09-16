@@ -1,5 +1,5 @@
 import struct
-from data import *
+import datapy
 from enum import IntEnum
 
 
@@ -1334,6 +1334,34 @@ class DoorModelSet(Opcode):
                           f"Data11: {self.data11.hex(' ')}, Data12: {self.data12.hex(' ')}"
 
 
+class D61OP(IntEnum):
+    OPCODE = 0
+    AOT = 1
+    SCE = 2
+    SAT = 3
+    NFLOOR = 4
+    SUPER = 5
+    XPOS = 6
+    ZPOS = 8
+    WIDTH = 10
+    DEPTH = 12
+    NXPOS = 14
+    NYPOS = 16
+    NZPOS = 18
+    NYDIR = 20
+    NSTAGE = 22
+    NROOM = 23
+    NCUT = 24
+    NNFLOOR = 25
+    DO2 = 26
+    ANIM = 27
+    SOUND = 28
+    KEYID = 29
+    KEYTYPE = 30
+    FREE = 31
+    SIZE = 32
+
+
 class DoorAOTSet(AOTOpcode):
     def __init__(self):
         super().__init__()
@@ -1357,9 +1385,7 @@ class DoorAOTSet(AOTOpcode):
         self.keyid = data[29]
         self.keytype = data[30]
         self.free = data[31]
-        test = f'R' + str((self.nstage + 1)) + f'{self.nroom:02X}'
-        self.doorname = f'DOOR TO {roomnames[test]}, CAM:{self.ncut}'
-        self.parameters = f"AOT: {self.aot:02X}, {sce[self.sce]}, SAT: {get_sat_flags(self.sat)}, NFloor: {self.nfloor:02X}, "\
+        self.parameters = f"AOT: {self.aot:02X}, SCE: {sce[self.sce]}, SAT: {get_sat_flags(self.sat)}, NFloor: {self.nfloor:02X}, "\
                           f"SUPER: {self.super:02X}, XPOS: {self.xpos.hex(' ')}, ZPOS: {self.zpos.hex(' ')}, " \
                           f"Width: {self.width.hex(' ')}, Depth: {self.depth.hex(' ')}, NextX: {self.nxpos.hex(' ')}, "\
                           f"NextY: {self.nypos.hex(' ')}, NextZ: {self.nzpos.hex(' ')}, " \
@@ -1367,6 +1393,58 @@ class DoorAOTSet(AOTOpcode):
                           f"NextRoom: {self.nroom:02X}, NextCut: {self.ncut:02X}, NextNFloor: {self.nnfloor:02X}, " \
                           f"DO2: {self.do2:02X}, Anim: {self.anim:02X}, Sound: {self.sound:02X}, " \
                           f"KeyID: {self.keyid:02X}, KeyType: {self.keytype:02X}, Free: {self.free:02X}"
+
+    def update_doorname(self, roomname):
+        self.doorname = ''
+        with open('jsonfiles/roomdoors.json', 'r') as file:
+            doorsdict = json.load(file)
+        if roomname not in doorsdict.keys():
+            return
+        test = f'R{self.nstage+1}{self.nroom:02X}'
+        if roomname == 'Scenario Start':
+            self.doorname = f'CANNOTCHANGE:{roomnames[test]} Door, CAM:{self.ncut}'
+            return
+        for entry in doorsdict[roomname]:
+            if self.nstage == 255 and self.doorid == entry['id']:
+                self.doorname = f"{entry['from']}:NOT SET-{self.doorid}"
+                return
+            if entry['from'] == roomnames[test]:
+                self.doorname = f"{entry['from']}:{roomnames[test]} Door, CAM:{self.ncut}"
+
+    def set_connection(self, connector):
+        self.connected_door = connector
+
+
+class D62OP(IntEnum):
+    OPCODE = 0
+    AOT = 1
+    SCE = 2
+    SAT = 3
+    NFLOOR = 4
+    SUPER = 5
+    XPOS0 = 6
+    ZPOS0 = 8
+    XPOS1 = 10
+    ZPOS1 = 12
+    XPOS2 = 14
+    ZPOS2 = 16
+    XPOS3 = 18
+    ZPOS3 = 20
+    NXPOS = 22
+    NYPOS = 24
+    NZPOS = 26
+    NYDIR = 28
+    NSTAGE = 30
+    NROOM = 31
+    NCUT = 32
+    NNFLOOR = 33
+    DO2 = 34
+    ANIM = 35
+    SOUND = 36
+    KEYID = 37
+    KEYTYPE = 38
+    FREE = 39
+    SIZE = 40
 
 
 class DoorAOTSet4P(AOT4POpcode):
@@ -1392,8 +1470,6 @@ class DoorAOTSet4P(AOT4POpcode):
         self.keyid = data[37]
         self.keytype = data[38]
         self.free = data[39]
-        test = f'R' + str((self.nstage + 1)) + f'{self.nroom:02X}'
-        self.doorname = f'DOOR TO {roomnames[test]}, CAM:{self.ncut}'
         self.parameters = f"AOT: {self.aot:02X}, SCE: {sce[self.sce]}, SAT: {get_sat_flags(self.sat)}, NFloor: {self.nfloor:02X}, "\
                           f"SUPER: {self.super:02X}, XPOS0: {self.xpos0.hex(' ')}, ZPOS0: {self.zpos0.hex(' ')}, " \
                           f"XPOS1: {self.xpos1.hex(' ')}, ZPOS1: {self.zpos1.hex(' ')}, XPOS2: {self.xpos2.hex(' ')}, "\
@@ -1403,6 +1479,26 @@ class DoorAOTSet4P(AOT4POpcode):
                           f"NextNFloor: {self.nnfloor:02X}, DO2: {self.do2:02X}, Anim: {dooranim[self.anim]}, " \
                           f"Sound: {self.sound:02X}, KeyID: {self.keyid:02X}, KeyType: {self.keytype:02X}, " \
                           f"Free: {self.free:02X}"
+
+    def update_doorname(self, roomname):
+        self.doorname = ''
+        with open('jsonfiles/roomdoors.json', 'r') as file:
+            doorsdict = json.load(file)
+        if roomname not in doorsdict.keys():
+            return
+        test = f'R' + str((self.nstage + 1)) + f'{self.nroom:02X}'
+        if roomname == 'Scenario Start':
+            self.doorname = f'CANNOTCHANGE:{roomnames[test]} Door, CAM:{self.ncut}'
+            return
+        for entry in doorsdict[roomname]:
+            if self.nstage == 255 and self.doorid == entry['id']:
+                self.doorname = f"{entry['from']}:NOT SET-{self.doorid}"
+                return
+            if entry['from'] == roomnames[f'R{self.nstage+1}{self.nroom:02X}']:
+                self.doorname = f"{entry['from']}:{roomnames[test]} Door, CAM:{self.ncut}"
+
+    def set_connection(self, connector):
+        self.connected_door = connector
 
 
 class AOTSet(AOTOpcode):
@@ -1417,7 +1513,6 @@ class AOTSet(AOTOpcode):
         self.data0 = data[14:16]
         self.data1 = data[16:18]
         self.data2 = data[18:20]
-        #print(f'{self.offset:04X}', f'{self.sat:02X}')
         self.parameters = f"AOT: {self.aot:02X}, SCE: {sce[self.sce]}, SAT: {get_sat_flags(self.sat)}, NFloor: {self.nfloor:02X}, "\
                           f"SUPER: {self.super:02X}, XPOS: {self.xpos.hex(' ')}, ZPOS: {self.zpos.hex(' ')}, " \
                           f"Width: {self.width.hex(' ')}, Depth: {self.depth.hex(' ')}, Data0: {self.data0.hex(' ')}, "\
@@ -1491,6 +1586,7 @@ class I67OP(IntEnum):
     FLAG = 18
     MDI = 20
     ACTION = 21
+    SIZE = 22
 
 
 class ItemAOTSet(AOTOpcode):
@@ -1519,6 +1615,7 @@ class ItemAOTSet(AOTOpcode):
                           f"Item: {self.itemname}, Amount: {self.amount.hex(' ')}, " \
                           f"Flag: {self.flag.hex(' ')}, MD1: {self.md1:02X}, Action: {action}"
 
+
 class I68OP(IntEnum):
     OPCODE = 0
     AOT = 1
@@ -1539,6 +1636,7 @@ class I68OP(IntEnum):
     FLAG = 26
     MDI = 28
     ACTION = 29
+    SIZE = 30
 
 
 class ItemAOTSet4P(AOT4POpcode):
