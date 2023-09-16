@@ -121,4 +121,5 @@ class Tracker:
         door['nypos'] = properdictinfo['nypos']
         door['nzpos'] = properdictinfo['nzpos']
         door['nydir'] = properdictinfo['nydir']
+        door['nnfloor'] = properdictinfo['nnfloor']
         self._dump()

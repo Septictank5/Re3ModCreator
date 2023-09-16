@@ -19,7 +19,7 @@ class CodeViewerWindow(QMainWindow):
         self.codemodel.clear()
         self.codemodel.setHorizontalHeaderLabels(['Offset', 'Opcode', 'Name', 'Parameters', 'Description'])
         room = self.parent.get_Room()
-        for key, value in roomnames.items():
+        for key, value in datapy.roomnames.items():
             if value == room:
                 self.read_in_data(key)
         super().show()

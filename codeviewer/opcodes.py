@@ -1,5 +1,6 @@
 import struct
 import datapy
+from datapy import *
 from enum import IntEnum
 
 
